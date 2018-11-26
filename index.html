@@ -1,72 +1,120 @@
+<!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <meta charset="utf-8">
         <title>Michelle Smith Maile</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--CSS-->
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/container.css">
+        
+        <!--FONTS-->
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Fjalla One' rel='stylesheet'>
+        
     </head>
+    
     <body>
+    <div class="index-container">
+
 <!--header-->
         <header>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="LOCATION.svg" alt="Michelle Maile's logo">
-                </a>
+            <div id="topNav" class="navigation">
+                <span id="closebtn" onclick="navToggle()">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+                </span>
+
+                <ul class="navham">
+                <li><a class="menuitems" href="index.html">Projects</a></li>		
+                <li><a class="menuitems" href="assets/Maile%20Resume.png">Resume</a></li>				
+                <li><a class="menuitems" href="bio.html">About</a></li>
+                <li><a class="menuitems" href="mailto:michellemaile29@gmail.com">Contact</a></li>
+                </ul>			
             </div>
+
+            <div id="main">
+            </div>
+            
+        </header>
+            
+            
+            
+<!--
             <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Work</a>
+                <ul class="flex-nav">
+                    <li class="ham">
+                        <img src="assets/ham.png" alt="menu">
                     </li>
-                    <li>
-                        <a href="about.html">About</a>
+                    <li class="logo">
+                        <img src="assets/logo.png" alt="Michelle's logo" a href="index.html">
                     </li>
-                    <li>
+                    <li class="projects">
+                        <a href="index.html">Projects</a>
+                    </li>
+                    <li class="resume">
                         <a href="assets/Maile-Resume.pdf">Resume</a>
                     </li>
-                    <li>
+                    <li class="about">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="contact">
                         <a href="mailto:michellemaile29@gmail.com">Contact</a>
                     </li>
                 </ul>
             </nav>
-        </header>
+-->
+        
 <!--hero-->
-        <section class="hero">
-            <section class="hero-copy">
+        <section class="hero" style= "background: url(assets/hero_triangles.png)">
+            <div class="hero-copy">
                 <h1 class="my-name">Michelle Smith Maile</h1>
                 <h2 class="ux-designer">User Experience Designer</h2>
-                <p class="tagline">Leveraging my background in experimental science and project management, I design <b>simple, research-driven, user-focused solutions</b> that are sleek, powerful, and intuitive.
-                </p>
-            </section>
-            <img src="LOCATION.svg" alt="background image of triangles">
+                <h5 class="tagline">Leveraging my background in experimental science and project management, I design <span style="font-weight: bold;">simple, research-driven, user-focused solutions</span> that are sleek, powerful, and intuitive.
+                </h5>
+            </div>
+<!--            <img class="triangles" src="assets/hero_triangles.png" alt="background image of triangles">-->
         </section>
+        
 <!--projects-->
         <section class="projects">
+            <div class="brainspace">
             <div class="brainspace-copy">
                 <h3 class="my-role">Product Design and Branding</h3>
                 <h2 class="project-name">BrainSpace</h2>
-                <p class="project-description">SaaS cloud storage and collaboration platform</p>
-                <a href="brainspace.html">
-                    <p>
-                        <span>View case study</span>
-                    </p>
+                <h5 class="index-project-description">SaaS cloud storage and collaboration platform</h5>
+                <a class="button center" href="brainspace.html">View case study
                 </a>
             </div>
+            <img id="brainspace-preview" src="assets/brainspace/brainspace_preview.png" alt="BrainSpace screen preview">
+            </div>
         </section>
+    </div> 
+        
 <!--footer-->
         <footer>
             <h3 class="connect">Connect</h3>   
-            <div class="social">
-                <a href="mailto:michellemaile29@gmail.com">
-                    <img src="LOCATION.svg" alt="LinkedIn icon">
-                </a>
-                <a href="https://www.linkedin.com/in/michelle-maile/">
-                    <img src="LOCATION.svg" alt="LinkedIn icon">
-                </a>
-                <a href="https://github.com/michellemaile">
-                    <img scr="LOCATION.svg" alt="GitHub icon">
-                </a>
-            </div>
+            <ul class="flex-footer">
+                <li class="email" a href="mailto:michellemaile29@gmail.com">
+                    <img src="assets/email.png" alt="E-mail me">
+                </li>
+                <li class="linkedin" a href="https://www.linkedin.com/in/michelle-maile/">
+                    <img src="assets/linkedin.png" alt="LinkedIn icon">
+                </li>
+                <li class="github" a href="https://github.com/michellemaile">
+                    <img src="assets/github.png" alt="GitHub icon">
+                </li>
+            </ul>
         </footer>
+        
+<!--scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.10/buzz.min.js"></script>
+    <script src="scripts/nav.js"></script>
     </body>
 </html>

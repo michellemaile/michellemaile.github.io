@@ -1,186 +1,446 @@
+<!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <meta charset="utf-8">
         <title>Michelle Smith Maile</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--CSS-->
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" type="text/css" href="slick.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick.1/slick/slick-theme.css"/>
+        
+        <!--FONTS-->
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Fjalla One' rel='stylesheet'>
+        
     </head>
     
     <body>
 <!--header-->
         <header>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="LOCATION.svg" alt="Michelle Maile's logo">
-                </a>
+            <div id="topNav" class="navigation">
+                <span id="closebtn" onclick="navToggle()">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+                </span>
+
+                <ul class="navham">
+                <li><a class="menuitems" href="index.html">Projects</a></li>		
+                <li><a class="menuitems" href="assets/Maile%20Resume.png">Resume</a></li>				
+                <li><a class="menuitems" href="bio.html">About</a></li>
+                <li><a class="menuitems" href="mailto:michellemaile29@gmail.com">Contact</a></li>
+                </ul>			
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="assets/Maile-Resume.pdf">Resume</a></li>
-                    <li><a href="mailto:michellemaile29@gmail.com">Contact</a></li>
-                </ul>
-            </nav>
+
+            <div id="main">
+            </div>
+            
         </header>
         
+    
+        
+    <div class="project-container">
+        
 <!--hero-->
-        <section class="hero">
-            <img src="LOCATION.svg" alt="BrainSpace screen views">
+        <section class="project-hero">
+            <img class="brainspace-preview" src="assets/brainspace/brainspace_preview.png" alt="BrainSpace screen preview">
             <h1 class="project-title">BrainSpace</h1>
-                <p class="BrainSpace description">This was my first large scale project at Bloc. BrainSpace is a SaaS (software as a service) cloud storage app that presents a new way to organize and sort files and tasks.</p>
-                <a class="see-more" href="Invision LINK">View Prototype</a>
+                <p class="project-description">This was my first large scale project at Bloc. BrainSpace is a Saas cloud storage app that presents a new way to organize and sort files and tasks.</p>
+                <a class="button" href="Invision LINK">View Prototype</a>
         </section>
         
 <!--overview-->
         <section class="overview">
+            
             <!--grey background-->
-            <img src="LOCATION.svg" alt="BrainSpace logo">
-            <h3 class="section-sub-titles">The Problem</h3>
+<!--            <img class= "overview-logo" src= "assets/brainspace/background-logo.png" alt="BrainSpace logo">-->
+            
+            <div class="overview-txt">
+                <section class="the-problem">
+                    <h3 class="section-sub-titles">The Problem</h3>
                 <p class="descriptions">Humans are being inundated by a massive amount of information that they want to organize and store for future use. Even though cloud storage is not a new concept and multiple big name players have already accessed the market, users are frustrated by the lack of organizational freedom and want to be able to locate their files in a way that feels more intuitive. </p>
-            <h3 class="section-sub-titles">The Solution</h3>
-                <p class="descriptions">Through comprehensive market analysis, user research, and user testing, I created BrainSpace. BrainSpace aims to solve the problem of digital disorganization by offering multiple layers of organization, customizable sort options, and lists that elevate this cloud storage service to an organizer, prioritizer, and collaboration tool that can handle anything.</p>
-            <h3 class="section-sub-titles">My Role</h3>
-                <p class="descriptions">Since this was an individual project, I was involved in every stage of the process including branding, conducting user research and competitive analysis, creating user personas, user stories, and user flows based on my research, and constructing wireframes, mockups and prototypes that went through user testing and multiple revisions. I used multiple tools including Figma, Invision and Maze.</p>
+                </section>
+            
+                <section class="the-solution">
+                <h3 class="section-sub-titles">The Solution</h3>
+                    <p class="descriptions">Through comprehensive market analysis, user research, and user testing, I created BrainSpace. BrainSpace aims to solve the problem of digital disorganization by offering multiple layers of organization, customizable sort options, and lists that elevate this cloud storage service to an organizer, prioritizer, and collaboration tool that can handle anything.</p>
+                </section>   
+                
+            <section class="my-role">
+                <h3 class="section-sub-titles">My Role</h3>
+                    <p class="descriptions">Since this was an individual project, I was involved in every stage of the process including branding, conducting user research and competitive analysis, creating user personas, user stories, and user flows based on my research, and constructing wireframes, mockups and prototypes that went through user testing and multiple revisions. I used multiple tools including Figma, Invision and Maze.</p>
+            </section>
+            </div>
         </section>
         
-<!--discovery-->
+<!--discovery section-->
         <section class="discovery">
-        <h2 class="section-titles">Discovery</h2>
+    
+            <div class="title-discovery">
+            <h2 class="section-titles discovery">Discovery</h2>
+        </div>
             
-            <!--user research-->
+<!--user research-->
             <section class="user-research">
-            <h3 class="sub-section-titles">User Research</h3>
+                <h3 class="section-sub-titles">User Research</h3> 
                 <p class="descriptions">I began my research by posting a survey to multiple media platforms and sending it out to email contacts. My aim was to understand what users were looking for in a cloud storage application, how they utilized these types of applications, and what their main frustrations were. According to the first survey, the stand out pain area for users was the organizational strategy, so a follow up survey was conducted to narrow in on a few core organizational features users could benefit from. </p>
-                <img src="LOCATION.svg" alt="100% use sharing features">
-                <img src="LOCATION.svg" alt="85% use cloud storage">
-                <img src="LOCATION.svg" alt="70% use storage features">
-                <img src="LOCATION.svg" alt="75% use Google Drive">
-                <h4 class="comments">What users like:</h4>
-                    <p class="quotes">“Easy to upload and store content” <br> “Sharing content by sending a link is easy” <br> “Quick way to create content”</p>
-                <h4 class="comments">What users don't like:</h4>
-                    <p class="quotes">“It’s frustrating trying to find what you’re looking for” <br> “Difficult to file, tag, and sort files” <br> “It feels unorganized”</p>
-            <h3 class="sub-section-titles">Lessons Learned</h3>
-                <p class="descriptions">The data suggest that most people are satisfied with their cloud storage service of choice, however, there are some dissatisfied customers and some areas that happy customers would like to see improved. These frustrations are consistent across cloud storage platforms and are mostly due to a lack of organizational ability and freedom. Based on these findings, I decided to make organizational strategies and customization a top priority.</p>
-            <a class="see-more" href="Survey LINK">View First Survey</a>
-            <a class="see-more" href="Survey LINK">View Second Survey</a>
+        </section>
+        <section class="pie-charts"> 
+            
+<!--        <section class="pie-charts-top">-->
+                
+            <section class="chart-1">
+            <img class="img-pie-charts" src="assets/brainspace/100.png" alt="100% use sharing features">
+            <p class="percentages">100%</p>
+            <h5 class="use-feature">use the sharing feature to some extent</h5>
             </section>
         
-            <!--competititve analysis-->
-            <section class="competitive-analysis">
-                <h3 class="sub-section-titles">Competitive Analysis</h3>
-                    <p class="descriptions">I conducted a competitive analysis of three cloud/online storage platforms: two, Google Drive and Dropbox, are leaders in the field, while SugarSync is less-known.<br>Google is a well-known leader in the cloud storage space and excels in the simplicity of use. The dashboard however, can be difficult to manage with its limited file sorting options, minimal collaboration features, and satellite apps that don’t consistently integrate.<br>Dropbox is another well-known leader that prides itself on collaboration and access from any device. Similar to Google however, the dashboard leaves much to be desired in terms of organizing and finding files.<br> SugarSync holds its strength in file storage that is organized in the same way as your desktop. Unfortunately, it is expensive compared to other apps and it suffers with the editing, collaboration, and creation features.</p>
-            <img src="LOCATION.svg" alt="Dropbox Logo">
-            <img src="LOCATION.svg" alt="Google Drive Logo">
-            <img src="LOCATION.svg" alt="SugarSync Logo">
+            <section class="chart-2">
+            <img class="img-pie-charts" src="assets/brainspace/85.png" alt="85% use cloud storage">
+            <p class="percentages">85%</p>
+            <h5 class="use-feature">use cloud storage services daily to once a week</h5>
             </section>
             
+<!--
+        </section>
+            
+        <section class="pie-charts-bottom">
+-->
+            
+            <section class="chart-3">
+            <img class="img-pie-charts" src="assets/brainspace/70.png" alt="70% use storage features">
+            <p class="percentages">70%</p>
+            <h5 class="use-feature">use the storage feature</h5>
+            </section>  
+                
+            <section class="chart-4">
+            <img class="img-pie-charts" src="assets/brainspace/75.png" alt="75% use Google Drive">
+            <p class="percentages">75%</p>
+            <h5 class="use-feature">use Google Drive</h5>
+            </section> 
+            
+<!--        </section>-->
+        </section>
+            
+     
+            
+        <section class="likes-dislikes">
+            
+            <section class="likes">
+            <h3 class="comments">What users like:</h3>
+            <p class="survey-quotes">“Easy to upload and store content” <br> “Sharing content by sending a link is easy” <br> “Quick way to create content”</p>
+        
+            </section>
+        
+            <section class="dislikes">
+            <h3 class="comments">What users don't like:</h3>
+            <p class="survey-quotes">“It’s frustrating trying to find what you’re looking for” <br> “Difficult to file, tag, and sort files” <br> “It feels unorganized”</p>
+        
+            </section>
+            
+        </section>
+        
+        <div class="lessons-box">    
+        <div class="lessons-learned"> 
+                <h3 class="section-sub-titles">Lessons Learned</h3>
+                <p class="descriptions">The data suggest that most people are satisfied with their cloud storage service of choice, however, there are some dissatisfied customers and some areas that happy customers would like to see improved. These frustrations are consistent across cloud storage platforms and are mostly due to a lack of organizational ability and freedom. Based on these findings, I decided to make organizational strategies and customization a top priority</p>
+            <a class="button" href="Survey LINK">View First Survey</a>
+            <a class="button" href="Survey LINK">View Second Survey</a>
+        </div>
+            </div>
+    
+        </section>
+        
+<!--competititve analysis-->
+        <section class="competative-analysis">
+                
+            <div class="txt-intro-swot"> 
+                 <h3 class="section-sub-titles">Competitive Analysis</h3>
+                    <p class="descriptions">I conducted a competitive analysis of three cloud/online storage platforms: two, Google Drive and Dropbox, are leaders in the field, while SugarSync is less-known.</p>
+            </div>
+            
+            <div class="SWOT-analysis">
+                <div class="dropbox">
+                    <img class="img-SWOT-logos" src="assets/brainspace/dropbox-logo.png" alt="Dropbox Logo"> 
+                    <p class="descriptions"> Dropbox is another well-known leader that prides itself on collaboration and access from any device. Similar to Google however, the dashboard leaves much to be desired in terms of organizing and finding files.</p>
+                </div>
+             
+                <div class="google">   
+                    <img class="img-SWOT-logos"src="assets/brainspace/google-logo.png" alt="Google Drive Logo">
+                    <p class="descriptions">Google is a well-known leader in the cloud storage space and excels in the simplicity of use. The dashboard however, can be difficult to manage with its limited file sorting options, minimal collaboration features, and satellite apps that don’t consistently integrate.
+                </div>
+
+                <div class="sugarsync">
+                    <img class="img-SWOT-logos"src="assets/brainspace/sugarsync-logo.png" alt="SugarSync Logo">
+                    <p class="descriptions">SugarSync holds its strength in file storage that is organized in the same way as your desktop. Unfortunately, it is expensive compared to other apps and it suffers with the editing, collaboration, and creation features.</p>
+                </div>
+            </div>
+            
+        </section>
+            
+        <section class="dash-analysis">
+            
+            <div class="title-dash-analysis">
+                <h3 class="section-sub-titles dash-analysis">Dashboard Analysis</h3>
+            </div>
+            
+            <div class="content-dash-analysis">
+                <div class="img-dash-analysis">
+                     <div class="google-dash">
+                        <h5 class="comp">Google Drive</h5>
+                        <img class="img-SWOT-dash" src="assets/brainspace/google-dash.png" alt="Google Drive Dashboard">
+                    </div>  
+
+                    <div class="dropbox-dash">
+                        <h5 class="comp">Dropbox</h5>
+                        <img class="img-SWOT-dash" src="assets/brainspace/dropbox-dash.png" alt="Dropbox Dashboard">
+                    </div>
+
+                    <div class="sugarsync-dash">
+                        <h5 class="comp">SugarSync</h5>
+                        <img class="img-SWOT-dash" src="assets/brainspace/sugarsync-dash.png" alt="SugarSync Dashboard">
+                    </div>
+                </div>
+
+                <div class="txt-dash-analysis">
+
+                    <p class="descriptions">In addition to the insights gained from the competitive analysis outlined above, there were some interesting things to be learned by examining the dashboards of the three sites. <br><br>
+                    1) <b>Layout:</b>First, there are some obvious trending dashboard layouts. All three sites examined featured a side panel with top bar. <br><br>
+                    2) <b>List view:</b> All three also had a listview which is consistent with what I found during the user research in that users prefer a listview to an icon view. Interestingly, Google Drive incorporates both views by adding icons/previews of 4 “quick access files” above the list view. <br><br>
+                    3) <b>Search bar:</b> All three had a prominent search bar. <br><br>
+                    4) <b>Logo: </b>All three had their logo in the top left corner, taking up minimal space.<br><br>
+                    5) <b>File organization: </b> All three provide a small preset amount of information about each file such as owner, last modified, last opened, or size. The most organizational influence the user has over this is to reverse the order on the owner or the name of the file.</p>
+                </div> 
+            </div>
+            
+        </section>
+
+            
             <!--user personas-->
-            <section class="user personas">
-            <h3 class="sub-section-titles">User Personas</h3>
+        <section class="user-personas">
+            
+            <div class="txt-user-personas">
+                <h3 class="section-sub-titles">User Personas</h3>
                 <p class="descriptions">
                 After gaining a broad understanding of users’ prevailing needs and frustrations, I conducted a few interviews in order to dig deeper into their experience. I distilled what I learned from my user surveys and from my interviews into two representative personas.</p>
-                <img src="LOCATION.svg" alt="Persona1">
-                <img src="LOCATION.svg" alt="Persona2">
-                <a class="see-more" href="Survey LINK">View First Survey</a>
-            <h3 class="findings">Based on these findings, I developed three solutions that could enhance  a user’s experience when using a cloud storage service.</h3>
-                <img src="LOCATION.svg" alt="Layers of organization">
-                <h4 class="solution">Multiple Layers of organization</h4>
+            </div>
+            
+            <div class="persona-profiles">
+                <div class="persona-1">
+                <h4 class="persona-name">Regina</h4>
+                    <p class="persona-info">Management Consultant, Mother, Woodworker <br> Age: 47 / Location: Austin, TX / Use: weekly</p>
+                <img class="img-persona" src="assets/brainspace/regina.png" alt="Regina's photo">
+                <h5 class="bio-title">Bio</h5>
+                    <p class="bio">Regina leads a busy life as a management consultant, a mother, an avid woodworker, and an aspiring business owner. She uses different services in order to keep her work files, her inspirations and her family matters separate.  She doesn’t like switching between platforms and would rather keep everything in one place but has gotten frustrated by the organizational features and limitationrs of storage. She is trying to attract potential collaborators and is searching for a good tool that can be used to create content, store information and share ideas without limiting her creativity. Although she doesn’t currently use the collaboration features on her cloud storage services, she sees the value in it and would like to start using these features more.</p>
+                <h5 class="goals-title">Goals:</h5>
+                    <p class="goals">Easily upload, organize and store content. <br> Free storage with automatic backups. <br> Separation between work and personal content.</p>
+                <h5 class="frustrations-title">Frustrations:</h5>
+                    <p class="frustrations">Doesn’t like having stuff in so many places. <br> Difficulty sharing, organizing and creating content. <br> Has been dissuaded by video chat because of difficulties connecting.</p>
+                <h5 class="persona-quote">“I have tons of things to keep track of between work, the kids and my personal interests and it’s spread all over the place. I’d like to organize it all in one spot.”</h5>
+                </div>
+                
+                <div class="persona-2">
+                <h4 class="persona-name">Kent</h4>
+                    <p class="persona-info">Biologist, Student, Surfer <br> Age: 29 / Location: Portland, OR / Use: daily</p>
+                <img class="img-persona" src="assets/brainspace/kent.png" alt="Kent's photo">
+                <h5 class="bio-title">Bio</h5>
+                    <p class="bio">Kent has been comfortable doing lab work for many years and is now going back to school to learn some new skills. He’s nervous, yet excited and is trying to keep all his documents organized. He needs separate spaces for his work and school documents as well as a way to organize them as he sees fit. He feels the current solutions are too ridged in terms of organizational features. Since he is exploring his creative side more, he is trying out different ways to present information beyond the traditional Microsoft Suite.</p>
+                <h5 class="goals-title">Goals:</h5>
+                    <p class="goals">Organize content without limitations. <br> Keep work and school content separate. <br> Collaborate on files through video/audio/text. Set reminders and to-do lists for specific content.</p>
+                <h5 class="frustrations-title">Frustrations:</h5>
+                    <p class="frustrations">Difficulty of organization. <br> Apps don’t sync effectively nor efficiently between devices. <br> Collaboration features are glitchy.</p>
+                <h5 class="persona-quote">“I am always moving between work, home and coffee shops and need to be able to see, edit and organize my content immediately.”</h5>
+            </div>
+                
+            </div>
+            
+            <div class="btn-persona">
+                <a class="button" href="persona.pdf">View Personas</a>
+            </div>
+            
+        </section>
+<!--three findings  -->
+        <section class="three-findings">  
+            
+            <div class="txt-findings">
+                <h5 class="findings">Based on these findings, I developed three solutions that could enhance  a user’s experience when using a cloud storage service.</h5>
+            </div>
+            
+            <div class="findings-boxes">
+                <div class="layers">
+                <img class="img-icon" src="assets/brainspace/layers.png" alt="Layers of organization">
+                <h4 class="solution">Multiple layers of organization</h4>
                     <h5 class="implementation">Implementation</h5>
-                        <p class="solution-description">Completely separate spaces for different activities.</p>
-                    <h5 class="function/value">Function/Value</h5>
-                        <p class="solution-description">Users can focus on one project while files related to others are out of the way.</p>
-                <img src="LOCATION.svg" alt="Customizable sort options">
+                        <h5 class="solution-description">Completely separate spaces for different activities.</h5>
+                    <h5 class="function">Function/Value</h5>
+                        <h5 class="solution-description">Users can focus on one project while files related to others are out of the way.</h5>
+            </div>
+                <div class="sort">
+                <img class="img-icon" src="assets/brainspace/sort.png" alt="Customizable sort options">
                 <h4 class="solution">Customizable sort options</h4>
                     <h5 class="implementation">Implementation</h5>
-                        <p class="solution-description">Users can sort files by two qualifiers of their choosing.</p>
-                    <h5 class="function/value">Function/Value</h5>
+                        <h5 class="solution-description">Users can sort files by two qualifiers of their choosing.</h5>
+                    <h5 class="function">Function/Value</h5>
                         <p class="solution-description">Allows users to organize and view content in a way that makes sense to them.</p>
-                <img src="LOCATION.svg" alt="Notifications and To-Dos">
+            </div>
+                <div class="notifications">
+                <img class="img-icon" src="assets/brainspace/notification.png" alt="Notifications and To-Dos">
                 <h4 class="solution">Notification view and to-do list</h4>
                     <h5 class="implementation">Implementation</h5>
                         <p class="solution-description">Master list that updates with space-relevant information.</p>
-                    <h5 class="function/value">Function/Value</h5>
+                    <h5 class="function">Function/Value</h5>
                         <p class="solution-description">Serves as an organizer and encourages users to store everything in one place.</p>
-            </section>
+            </div>
+            </div>
         </section>
         
 <!--information architecture-->
         <section class="information-architecture">
-        <h2 class="section-titles">Information Architecture</h2>
+            
+            <div class="title-information-arichitecture">
+                <h2 class="section-titles">Information Architecture</h2>
+        </div>    
             
             <!--user stories-->
-            <section class="user-stories">
-            <h3 class="sub-section-titles">User Stories</h3>
+        <section class="user-stories">
+            
+            <div class="txt-user-stories">  
+                <h3 class="section-sub-titles">User Stories</h3>
                 <p class="descriptions">The next step in the design process was to create user stories to help identify and prioritize the most important features needed to create a minimum viable product </p>
-                <img src="LOCATION.svg" alt="User stories">
-                <a class="see-more" href="LOCATION user stories">View user stories</a>
-            </section>
+                <a class="button" href="LOCATION user stories">View user stories</a>
+            </div>
+        </section>
+        </section> 
         
             <!--user flows-->
-            <section class="user-flows">
-            <h3 class="sub-section-titles">User Flows</h3>
+        <section class="user-flows">
+            <div class="user-flows-textbox">
+                <div class="user-flows-txt">
+                <h3 class="section-sub-titles">User Flows</h3>
                 <p class="descriptions">User flows were created in order to define the true scope of what needed to be included in the first testable version of the application. This detailed information architecture served as a roadmap for the creation of this site.</p>
-                <img src="LOCATION.svg" alt="User Flows">
-                <a class="see-more" href="LOCATION user flows">View user flows</a>
-            </section>
+                <a class="button" href="LOCATION user flows">View user flows</a>
+                </div>
+            </div>
             
-            <!--wireframes-->
-            <section class="wireframes">
-            <h3 class="sub-section-titles">Wireframes</h3>
-                <p class="descriptions">I created wireframes using Figma and uploaded them to Invision so I could begin user testing. Testing was conducted both in person and remotely. Users were able to complete all three basic tasks without trouble indicating that I was off to a good start. Nonetheless, I gained some very valuable insight into how features should be changed and how I should conduct these tests in the future. <br> There were three main takeaways: <br>1) Word choice is very important. The button should read “upload” instead of “done.” <br> 2) There should be confirmation that a file was uploaded. <br>3) Having more clarifying information would be useful. For example, the window should say which file you are trying to upload or move.</p>
-                <img src="LOCATION.svg" alt="Landing page wireframe">
-                <img src="LOCATION.svg" alt="Dashboard wireframe">
-                <a class="see-more" href="LOCATION wireframes">View wireframes</a>
-            </section>
         </section>
-        
-<!--branding and identity-->
+            
+<!--branding and identity section-->
         <section class="branding-and-identity">
         <h2 class="section-titles">Branding and Identity</h2>
+            <div class="txt-branding">  
             <p class="descriptions">As part of my work for developing this application, I was tasked with generating a name and designing a logo. The goal was to create something that felt sleek, intelligent, powerful and professional. Eventually, I settled on BrainSpace because this app is for all of the things occupying the spaces of your brain. The app keeps everything organized but separate and hopefully promotes a feeling of peace that everything is all in one place without being overwhelming. </p>
-            <img src="LOCATION.svg" alt="First logo iterations">
-            <img src="LOCATION.svg" alt="Second logo iterations">
-            <img src="LOCATION.svg" alt="Final logo design">
+            </div>
+            <img class="img-logos" src="assets/brainspace/logos.png" alt="First logo iterations">
         </section>
         
-<!--mockups-->
-        <section class="mockups">
-        <h2 class="section-titles">Hi-Fi Mockups</h2>
+<!--wireframes and mockups section-->
+ <section class="wireframes-and-mockups">
+     
+        <div class="title-wireframes-and-mockups">
+        <h2 class="section-titles">Wireframes and Mockups</h2>
+        </div>
+
+         <!--wireframes-->
+        <section class="wireframes">
+<!--            <div class="txt-wireframes">-->
+            <div class="wire-left">
+                <div class="txt-wire">
+                <h3 class="section-sub-titles">Wireframes</h3>
+                <p class="descriptions">I created wireframes using Figma and uploaded them to Invision so I could begin user testing. Testing was conducted both in person and remotely. Users were able to complete all three basic tasks without trouble indicating that I was off to a good start. Nonetheless, I gained some very valuable insight into how features should be changed and how I should conduct these tests in the future. <br> There were three main takeaways: <br>1) Word choice is very important. The button should read “upload” instead of “done.” <br> 2) There should be confirmation that a file was uploaded. <br>3) Having more clarifying information would be useful. For example, the window should say which file you are trying to upload or move.</p>
+                </div>
+                <div class="dash-wire">
+                <img class="img-dash-wire" src="assets/brainspace/mock-dash.png" alt="Dashboard wireframe">
+                </div>
+            </div>
             
+            <div class="land-wire">
+                <img class="img-land-wire" src="assets/brainspace/mock-landing.png" alt="Landing page wireframe">
+            </div>
+        
+            
+        </section>
+        
             <!--landing page-->
-            <section class="landing-page">
-            <h3 class="sub-section-titles">Landing Page</h3>
-                <p class="descriptions">This landing page underwent multiple iterations as I worked on developing my design eye. The final landing page consists of only the necessary information, a few colors with the dominant blue carrying through to the page, and relevant photos that catch but do not distract the eye. Multiple preference tests were conducted using Usability Hub in order to land at this design.</p>
-                <h3 class="sub-section-titles">Iterations</h3>
-                <img src="LOCATION.svg" alt="First landing page iteration">
-                <img src="LOCATION.svg" alt="Second landing page iteration">
-                <img src="LOCATION.svg" alt="Third landing page iteration">
-                <img src="LOCATION.svg" alt="Fourth landing page iteration">
-                <h3 class="sub-section-titles">Final Design</h3>
-                <img src="LOCATION.svg" alt="Final landing page design">
+        <section class="landing-page">
+            
+            <div class="txt-landing-page">
+            <h3 class="section-sub-titles">Landing Page</h3>
+                <p class="descriptions">The landing page underwent multiple iterations as I worked on developing my design eye. The final landing page consists of only the necessary information, a few colors with the dominant blue carrying through to the page, and relevant photos that catch but do not distract the eye. Multiple preference tests were conducted using Usability Hub in order to land at this design.</p>
+            </div>
+            
+            <div class="txt-iterations">
+                <h3 class="section-sub-titles">Iterations</h3>
+            </div>
+            
+            <div class="land-iterations">
+                
+                <div class="land-1">
+                <img class="img-land-iterations" src="assets/brainspace/mobile-land-1.png" alt="First landing page iteration">
+                </div>
+                
+            <div class="land-2">
+                <img class="img-land-iterations" src="assets/brainspace/mobile-land-2.png" alt="Second landing page iteration">
+                </div>
+
+                <div class="land-3">
+                <img class="img-land-iterations" src="assets/brainspace/mobile-land-3.png" alt="Third landing page iteration">
+                </div>
+                
+                <div class="land-4">
+                <img class="img-land-iterations" src="assets/brainspace/mobile-land-4.png" alt="Fourth landing page iteration">
+                </div>
+                
+            </div>
+
+            
+            <div class="txt-final-design">
+                <h3 class="section-sub-titles">Final Design</h3>
+            </div>
+            
+            <div class="img-final-design">
+                <img class="img-land-final" src="assets/brainspace/mobile-land-final.png" alt="Final landing page design">
+            </div>
+            
             </section>
         
             <!--dashboard-->
             <section class="dashboard">
-            <h3 class="sub-section-titles">Dashboard</h3>
-                <p class="descriptions">The process of designing the dashboard screens and testing their functionality went hand in hand as the design evolved and as I learned more about how users interact with a website.</p>
                 
-                <section class="space-view">
-                <h4 class="dahboard-view">Dashboard View with To-Do List and Notification List Open</h4>
-                    <p class="intitial-design">Initial Design</p>
-                     <img src="LOCATION.svg" alt="Initial design for dashboard">
+                    <h3 class="section-sub-titles">Dashboard</h3>
+                
+                    <div class= "dash-txt">
+                    <p class="descriptions">The process of designing the dashboard screens and testing their functionality went hand in hand as the design evolved and as I learned more about how users interact with a website.</p>
+                    </div>
+                
+                <section class="dash-view">
+
+                    <h4 class="view">Dashboard View with To-Do List and Notification List Open</h4>   
+                    <h5 class="intitial-design">Initial Design</h5>
+                    <img class="img-dash-iterations" src="assets/brainspace/dash-1.png" alt="Initial design for dashboard">
+                    
+                    <div class= "dash-txt">
                     <p class="descriptions">The final dashboard design has a simplified side panel and provides much <b>cleaner views of the spaces.</b> Users can see <b>useful, higher-level information</b> about each space including tags, when it was created and by who. There is a <b>simplified custom view,</b> allowing users to view the top three files filtered however they choose including recently modified, recently opened, created by, tagged with and starred. The notifications and to-do list are easily accessed and update based on which space (if any) is being viewed.</p>
-                    <img src="LOCATION.svg" alt="Final design for dashboard">
-                    </section>
+                    </div>
+                    
+                    <img class="img-dash-final" src="assets/brainspace/dash-1-final.png" alt="Final design for dashboard">
+                </section>
                 
                 <section class="file-view">
-                <h4 class="file-view">File view inside space with sort options window open</h4>
+                <h4 class="view">File view inside space with sort options window open</h4>
                     <p class="intitial-design">Initial Design</p>
-                     <img src="LOCATION.svg" alt="Initial design for file view">
+                     <img class="img-dash-iterations" src="assets/brainspace/dash-2.png" alt="Initial design for file view">
+                    
+                    <div class= "dash-txt">
                     <p class="descriptions">The updated design is cleaner-looking, easier to use and provides more information. The decision to present the files in a list format and the decision include “star” and “share” as the two action items available in a hover state, were based on user surveys and testing. In order to address the organization complaints of cloud storage users, I decided to incorporate <b>two sorting buttons that allow users to view files based on different qualifiers.</b> A user can decide for example, that they want to view all files that were created by a specific person that have a certain tag associated with them. Once this selection has been made, the files will reorder according to these specifications. </p>
-                    <img src="LOCATION.svg" alt="Final design for file view">
-                <a class="see-more" href="Invision LINK">View Prototype</a>
+                    </div>
+                    
+                    <img class="img-dash-final" src="assets/brainspace/dash-2-final.png" alt="Final design for file view">
+                <a class="button" href="Invision LINK">View Prototype</a>
                 </section>    
             </section>
         </section>
@@ -189,6 +449,8 @@
         <section class="conclusions">
         <h2 class="section-titles">Conclusions</h2>
             
+        <div class="conclusions-txt">   
+            
         <h4 class="conclusion-sections">What worked?</h4>
             <p class="descriptions">I was able to design a product that was mostly intuitive, albeit a little messy, right from the start as evidenced by user tests. This allowed me to focus my attention on the design and simplifying my product further into something that was even more easy to use. The biggest lesson learned here was to start simple and expand from there.</p>
             
@@ -196,24 +458,45 @@
             <p class="descriptions">My biggest hurdle was the visual design of the website. This project underwent quite a few revisions. Keeping in line with what I mentioned above, I am realizing the importance of keeping things simple and clean. For future projects, I will spend more time looking at the competition and gathering inspiration so I have a clearer design direction.</p> 
             
          <h4 class="conclusion-sections">Final thoughts.</h4>
-            <p class="descriptions">I am proud of the solutions I came up with in order to tackle the problem of virtual disorganization however, the design could be improved upon. This project showed me how fun and valuable testing is at every stage of the process. I am excited to take these lessons and apply them to my next project!</p>    
+            <p class="descriptions">I am proud of the solutions I came up with in order to tackle the problem of virtual disorganization however, the design could be improved upon. This project showed me how fun and valuable testing is at every stage of the process. I am excited to take these lessons and apply them to my next project!</p>   
+            </div> 
         </section>
+        
+        </div>
         
 <!--footer-->
         <footer>
             <h3 class="connect">Connect</h3>   
-            <div class="social">
-                <a href="mailto:michellemaile29@gmail.com">
-                    <img src="LOCATION.svg" alt="LinkedIn icon">
-                </a>
-                <a href="https://www.linkedin.com/in/michelle-maile/">
-                    <img src="LOCATION.svg" alt="LinkedIn icon">
-                </a>
-                <a href="https://github.com/michellemaile">
-                    <img scr="LOCATION.svg" alt="GitHub icon">
-                </a>
-            </div>
+            <ul class="flex-footer">
+                <li class="email" a href="mailto:michellemaile29@gmail.com">
+                    <img src="assets/email.png" alt="E-mail me">
+                </li>
+                <li class="linkedin" a href="https://www.linkedin.com/in/michelle-maile/">
+                    <img src="assets/linkedin.png" alt="LinkedIn icon">
+                </li>
+                <li class="github" a href="https://github.com/michellemaile">
+                    <img src="assets/github.png" alt="GitHub icon">
+                </li>
+            </ul>
         </footer>
         
+    <!--scripts-->
+<!--        nav burger-->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.10/buzz.min.js"></script>
+    <script src="scripts/nav.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        
+<!--        slick-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick.1/slick/slick.min.js"></script>
+    
+      <script type="text/javascript">
+    $(document).ready(function(){
+      $('.land-iterations').slick({
+          rows: 3
+      });
+    });
+    </script>
     </body>
 </html>
