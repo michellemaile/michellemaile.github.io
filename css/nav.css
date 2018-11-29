@@ -89,38 +89,24 @@
     font-size:30px;
 }
 
-/*
 @media screen and (min-width: 768px) {
-header {
-    background-color: #FBFBFB;
-    width: 100%;
-    height: 5rem;
-}
-
-ul {
-    padding: 2rem;
-}
-
-li {
-    width: 5rem;
-    flex-grow: 1;
-}
-
-.flex-nav {
+    #closebtn {
+        display: hidden;
+    } 
+    
+    .line1, .line2, .line3 {
+        display: hidden;
+    }
+    
+    #main {
+        display: hidden;
+    }
+    
+    .navigation {
     display: flex;
     flex-direction: row;
-    height: 5rem;
-}
-
-.logo .work, .resume, .about, .contact{
-    flex-grow: 2;
     text-align: center;
 }
-
-.logo {
-    flex-grow: 5;
 }
-}
-*/
 
 

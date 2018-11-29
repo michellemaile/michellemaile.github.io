@@ -6,7 +6,7 @@ html {
     font-size: 10px;
      color: #30343f;
 /*    background-color: #FFFFFF;*/
-    font-family: 'assistant';
+    font-family: 'Assistant', sans-serif;
 }
 
 
@@ -32,6 +32,11 @@ html {
 
 
 /*font families*/
+
+b {
+    font-weight: 900;
+}
+
 h1 {
     font-family: 'oswald';
     font-size: 1.8rem;
@@ -64,11 +69,11 @@ h5.findings, .tagline, index-project-description, .solution-description, .use-fe
     font-size: 1.8rem;
 }
 
-h5.implementation, .function, .persona-quote, conclusion-sections, .initial-design, .comp {
+h5.implementation, .function, .persona-quote, conclusion-sections, .comp, .iteration {
     font-size: 1.4rem;
 }
 
-h5.bio-title, .goals-title, .frustrations-title {
+.bio-title, .goals-title, .frustrations-title {
     font-size: 1.2rem;
 }
 
@@ -110,10 +115,6 @@ h2.project-name {
 h2.ux-designer {
     font-size: 7.2rem;
 }
-    
-h2.section-titles {
-    font-size: 4.8rem
-}
 
 h3 {
     font-size: 2rem;
@@ -132,7 +133,7 @@ h5.tagline {
     font-size: 3.6rem;
     }
        
-h5.index-project-description, .findings; .solution-description, .use-feature, .persona-quote, conclusion-sections, {
+.index-project-description, .findings, .solution-description, .use-feature, conclusion-sections, {
     font-size: 2rem;
 }
 
@@ -144,7 +145,18 @@ p {
     font-size: 1.8rem;
 }
 
-p.descriptions, .survey-quotes, p.project-descriptions {
+p.descriptions {
+    font-size: 1.8rem;}
+    
+.persona-quote {
+    font-size: 2rem;
+}
+
+.bio, .frustrations, .goals {
+    font-size: 1.4rem;
+}    
+    
+.survey-quotes, p.project-descriptions {
     font-size: 2rem;
 }
 
@@ -155,10 +167,12 @@ p.percentages {
 
 /*index hero*/
 
+/*
 .hero {
     background: 
     size: 
 }
+*/
 .hero-copy {
     padding: 2rem;
 }
@@ -260,21 +274,12 @@ p.project-description {
     background-color: #F7F7F7;
 }
 
-/*
-.overview-logo {
-    width: 60%;
-    margin: 0 auto;
-    justify-content: center;
-}
-*/
-
 .the-problem, .the-solution, .my-role {
     margin: 0 auto;
     width: 90%;
     padding: 2rem;
 }
 
-/*
 .the-problem {
     grid-area: the-problem;
 }
@@ -286,20 +291,32 @@ p.project-description {
 .my-role {
     grid-area: my-role;
 }
-*/
 
 @media screen and (min-width: 768px) {
     .overview-logo {
     grid-area: overview-logo;
     width: 100%;
-    padding: 2rem;
+    padding: 5rem;
+    content: url(../assets/brainspace/background-logo.png);
+    }
+    
+    .the-problem {
+    grid-area: the-problem;
+    }
+
+    .the-solution {
+    grid-area: the-solution;
+    }
+
+    .my-role {
+    grid-area: my-role;
     }
     
     .overview {
       display: grid;
       margin: 0 auto;
       grid-gap: 2rem;
-      grid-template-columns: 6fr, 6fr;
+      grid-template-columns: 1fr 1fr;
       grid-template-areas: 
           "overview-logo the-problem"
           "overview-logo the-solution"
@@ -310,6 +327,14 @@ p.project-description {
 
 
 /*TITLE discovery section*/
+
+
+
+@media screen and (min-width: 768px) {
+.discovery {
+    padding: 5rem 0;
+}
+}
 
 
 /*user research*/
@@ -360,7 +385,6 @@ p.project-description {
 
 p.percentages {
     color: #006494;
-    font-style: bold;
     margin: auto;
     padding: 1rem;
 }
@@ -442,9 +466,9 @@ p.survey-quotes {
     flex-direction: row;
       }
 
-.dropbox descriptions, .google descriptions, .sugarsync descriptions {
-    width: 33%;
-    padding: 1rem;
+.dropbox, .google, .sugarsync {
+    width: 30%;
+    padding: 2rem;
     align-items: center;
 }
 }
@@ -468,8 +492,13 @@ p.survey-quotes {
     padding: 1rem;
 }
 
-.img-dash-analysis {
-    align-content: center;
+.img-SWOT-dash {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.comp {
+    padding: 1rem 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -523,17 +552,20 @@ p.survey-quotes {
     margin: 0 .5rem;
 }
 
+.persona-box {
+    padding-bottom: 2rem;
+}
+
 .img-persona {
     width: 50%;
-    margin: 0 auto;
+    justify-content: center;
 }
 
 h5.bio-title, .goals-title, .frustrations-title {
-    font-style: bold;
     padding: 1rem 0;
 }
 
-h5.persona-quote, .persona-name {
+.persona-quote, .persona-name {
     padding: 2rem;
     text-align: center;
 }
@@ -541,6 +573,10 @@ h5.persona-quote, .persona-name {
 p.persona-info {
     text-align: center;
     padding-bottom: 2rem;
+}
+
+.btn-persona {
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -555,6 +591,13 @@ p.persona-info {
 
 /*three findings*/
 
+.img-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .solution {
     margin: 2rem 0 0 0;
 }
@@ -562,18 +605,18 @@ p.persona-info {
 .txt-findings {
     width: 80%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .img-icon {
     width: 7rem;
-    display: inline-block;
     margin: 0 auto;
 }
 
 .findings-boxes {
   display: flex;
   flex-direction: column;
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .implementation, .function {
@@ -588,6 +631,11 @@ p.persona-info {
     margin: 0 .5rem;
 }
 
+.box {
+    padding-bottom: 2rem;
+    margin: 0 auto;
+}
+
 @media screen and (min-width: 768px) {
 .findings-boxes {
   display: flex;
@@ -599,6 +647,16 @@ p.persona-info {
     
 /*TITLE information architecture section*/
 
+.information-architecture {
+    background: #f7f7f7;
+}
+
+@media screen and (min-width: 768px) {
+.information-architecture {
+    padding: 5rem 0;
+}
+}
+    
 /*user stories*/
 
 .user-stories {
@@ -619,7 +677,7 @@ p.persona-info {
     text-align: center;
     width: 90%;
     margin: 0 auto;
-    background: white;
+/*    background: white;*/
 }
 
 .user-flows-txt {
@@ -630,47 +688,57 @@ p.persona-info {
 }
 
 user-flows {
-    display: block;
-    background: url(../assets/brainspace/flows.png);
-    background-repeat: no-repeat;
+    background-image: url(../assets/brainspace/flows.png);
+/*    background-repeat: no-repeat;*/
     background-size: 100%;
     width: 100%;
 }
 
 /*TITLE branding and identity section*/
+.branding-and-identity {
+    padding: 5rem 0;
+    margin: 0 auto;
+}
 
 .txt-branding {
     padding: 2rem 0;
-    text-align: center;
+    text-align: left;
     width: 80%;
     margin: 0 auto;
 }
 
 .img-logos {
-    width: 10 0%;
+    width: 90%;
     margin: 0 auto;
 }
 
 /*TITLE wireframes and mockups section*/
 
+.wireframes-and-mockups {
+    background: #f7f7f7;
+    padding: 5rem 0;
+}
+
 /*wireframes*/
 
 .wireframes {
     margin: 0 auto;
-/*    width: 90%;*/
     display: flex;
     flex-direction: column;
 }
 
 .txt-wire {
-    padding: 1rem;
+    padding: 2rem 0;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.dash-wire, .land-wire {
+.img-dash-wire, .img-land-wire {
+    padding: 2rem 0;
     align-content: center;
-    border: 1px;
-    border-style: solid;
-    border-width: .1rem;
+    width: 80%;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -682,17 +750,11 @@ user-flows {
     margin: 0 auto;
       }
   
-  .wire-left {
-     flex: 1 1 0;
-/*     margin: 0 .5rem ;*/
+  .wire-left, .land-wire {
+    border: 1px;
+    flex: 1 1 0;
   }
   
-  .land-wire {
-     flex: 1 1 0;
-     margin: 0 .5rem;
-     max-width: 60%;
-  }
-}
 
 /*landing page*/
 
@@ -702,31 +764,43 @@ user-flows {
     width: 80%;
     margin: 0 auto;
 }
+
 .land-iterations {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    background: #f7f7f7;
+    max-width: 80%;
+    height: auto;
+    width: auto;
 }
 
 @media screen and (min-width: 768px) {
   .land-iterations {    
-    max-width: 80%;
+    max-width: 20%;
     height: auto;
+    width: auto;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    }
+
     
+/*
     .land-1, .land-2 {
         display: flex;
         flex-direction: row;
         max-width: 80%;
+*/
     }
 }
 
+
 /*dashboard*/
+/*
 .dashboard {
     margin: 0 auto;
 }
+*/
 
 .view {
     margin: 0 auto;
