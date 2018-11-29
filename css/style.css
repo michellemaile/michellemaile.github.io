@@ -476,6 +476,10 @@ p.survey-quotes {
 
 
 /*dash analysis*/
+
+.dash-analysis {
+    text-align: center;
+}
 .title-dash-analysis {
     padding: 2rem 0;
     text-align: center;
@@ -490,15 +494,16 @@ p.survey-quotes {
 
 .txt-dash-analysis {
     padding: 1rem;
+    text-align: left;
 }
 
 .img-SWOT-dash {
-    margin: 0 auto;
     width: 90%;
 }
 
 .comp {
-    padding: 1rem 0;
+    padding: .5rem 2rem;
+    text-align: left;
 }
 
 @media screen and (min-width: 768px) {
@@ -576,7 +581,7 @@ p.persona-info {
 }
 
 .btn-persona {
-    margin: 0 auto;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -687,17 +692,18 @@ p.persona-info {
     margin: 0 auto;
 }
 
-user-flows {
-    background-image: url(../assets/brainspace/flows.png);
-/*    background-repeat: no-repeat;*/
+.user-flows {
+    background-image: url("../assets/brainspace/flows.png");
+    background: contain no-repeat;
     background-size: 100%;
+    background: cover;
     width: 100%;
+    height: 100%;
 }
 
 /*TITLE branding and identity section*/
 .branding-and-identity {
-    padding: 5rem 0;
-    margin: 0 auto;
+    text-align: center;
 }
 
 .txt-branding {
@@ -721,8 +727,8 @@ user-flows {
 
 /*wireframes*/
 
-.wireframes {
-    margin: 0 auto;
+.wireframes, .landing-page, .dashboard {
+    text-align: center;
     display: flex;
     flex-direction: column;
 }
@@ -736,9 +742,7 @@ user-flows {
 
 .img-dash-wire, .img-land-wire {
     padding: 2rem 0;
-    align-content: center;
     width: 80%;
-    margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -759,8 +763,7 @@ user-flows {
 /*landing page*/
 
 .txt-landing-page {
-    padding: 2rem 0;
-    text-align: center;
+    padding: 2rem;
     width: 80%;
     margin: 0 auto;
 }
@@ -769,20 +772,21 @@ user-flows {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    background: #f7f7f7;
-    max-width: 80%;
-    height: auto;
-    width: auto;
+    max-width: 100%;
+    padding: 0;
 }
+    
+    .img-final-design {
+        margin: 0 auto;
+    }
 
 @media screen and (min-width: 768px) {
   .land-iterations {    
-    max-width: 20%;
-    height: auto;
-    width: auto;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
+    padding: 2rem;
 
     
 /*
