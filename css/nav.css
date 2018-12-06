@@ -1,3 +1,9 @@
+
+.mm-logo {
+    padding: 1rem;
+    width: 90px;
+}
+
 .navigation {
     width: 100%;
     position: fixed;
@@ -11,7 +17,6 @@
 }
 
 .navham {
-    margin-top:1rem;
     text-align:center;
     list-style:none; 
     margin-left:auto;
@@ -47,7 +52,6 @@
 }
 
 .menuitems {
-    padding-top:1rem;
     text-decoration: none;
     font-size: 1.6rem;
     display: inline-block;
@@ -62,12 +66,12 @@
   display:block;
   width: 0;
   height: 1px;
-  background: #fbfbfb;
   transition: width .2s;
 }
 
 .menuitems:hover::after {
     width:100%;
+    background-color: #006494;
 }
 
 #closebtn {
@@ -85,28 +89,13 @@
     transition: margin-top .4s;
     text-align:center;
     margin:auto;
-    padding: 16px;
     font-size:30px;
 }
 
+/*
 @media screen and (min-width: 768px) {
-    #closebtn {
-        display: hidden;
-    } 
-    
-    .line1, .line2, .line3 {
-        display: hidden;
-    }
-    
-    #main {
-        display: hidden;
-    }
-    
-    .navigation {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
+
 }
-}
+*/
 
 

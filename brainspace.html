@@ -22,7 +22,14 @@
     <body>
 <!--header-->
         <header>
+            
+            <section class="mobile">
             <div id="topNav" class="navigation">
+                <a href ="index.html">
+                <img class="mm-logo" src="assets/MM-logo.png" alt="Michelle Maile Logo">
+                </a>
+                
+                
                 <span id="closebtn" onclick="navToggle()">
                 <span class="line1"></span>
                 <span class="line2"></span>
@@ -30,7 +37,7 @@
                 </span>
 
                 <ul class="navham">
-                <li><a class="menuitems" href="index.html">Projects</a></li>		
+                <li><a class="menuitems" href="index.html#target">Projects</a></li>		
                 <li><a class="menuitems" href="assets/Maile%20Resume.png">Resume</a></li>				
                 <li><a class="menuitems" href="bio.html">About</a></li>
                 <li><a class="menuitems" href="mailto:michellemaile29@gmail.com">Contact</a></li>
@@ -39,6 +46,10 @@
 
             <div id="main">
             </div>
+            </section>
+            
+            <section class="desktop">
+            </section>
             
         </header>
         
@@ -351,7 +362,18 @@
             <div class="wire-left">
                 <div class="txt-wire">
                 <h3 class="section-sub-titles">Wireframes</h3>
-                <p class="descriptions">I created wireframes using Figma and uploaded them to Invision so I could begin user testing. Testing was conducted both in person and remotely. Users were able to complete all three basic tasks without trouble indicating that I was off to a good start. Nonetheless, I gained some very valuable insight into how features should be changed and how I should conduct these tests in the future. <br><br> There were three main takeaways: <br><br>1) Word choice is very important. The button should read “upload” instead of “done.” <br><br> 2) There should be confirmation that a file was uploaded. <br><br>3) Having more clarifying information would be useful. For example, the window should say which file you are trying to upload or move.</p>
+                <p class="descriptions">I created wireframes using Figma and uploaded them to Invision so I could begin user testing. Testing was conducted both in person and remotely. Users were able to complete all three basic tasks without trouble indicating that I was off to a good start. Nonetheless, I gained some very valuable insight into how features should be changed and how I should conduct these tests in the future. <br><br> There were three main takeaways: </p>
+                    
+                <ol class="takeaways">
+                <li class="takeaway">
+                    Word choice is very important. The button should read “upload” instead of “done.”</li>
+                <li class="takeaway">
+                    There should be confirmation that a file was uploaded. </li>
+                
+                <li class="takeaway">
+                    Having more clarifying information would be useful. For example, the window should say which file you are trying to upload or move.</li>
+                </ol>    
+                
                 </div>
                 <div class="dash-wire">
                 <img class="img-dash-wire" src="assets/brainspace/mock-dash.png" alt="Dashboard wireframe">
@@ -380,21 +402,21 @@
             <div class="land-iterations">
                 
                 <div class="landA">
-                    <div class="land">
+                    <div class="land1">
                     <img class="img-land-iterations" src="assets/brainspace/mobile-land-1.png" alt="First landing page iteration">
                     </div>
                 
-                    <div class="land">
+                    <div class="land2">
                     <img class="img-land-iterations" src="assets/brainspace/mobile-land-2.png" alt="Second landing page iteration">
                     </div>
                 </div>
 
                 <div class="landB">
-                    <div class="land">
+                    <div class="land3">
                     <img class="img-land-iterations" src="assets/brainspace/mobile-land-3.png" alt="Third landing page iteration">
                     </div>
                 
-                    <div class="land">
+                    <div class="land4">
                     <img class="img-land-iterations" src="assets/brainspace/mobile-land-4.png" alt="Fourth landing page iteration">
                     </div>
                 </div>
@@ -415,9 +437,8 @@
             <!--dashboard-->
             <section class="dashboard">
                 
-                    <h3 class="section-sub-titles">Dashboard</h3>
-                
                     <div class= "dash-txt">
+                        <h3 class="section-sub-titles">Dashboard</h3>
                     <p class="descriptions">The process of designing the dashboard screens and testing their functionality went hand in hand as the design evolved and as I learned more about how users interact with a website.</p>
                     </div>
                 
@@ -444,8 +465,10 @@
                     </div>
                     
                     <img class="img-dash-final" src="assets/brainspace/dash-2-final.png" alt="Final design for file view">
+                </section> 
+                
                 <a class="button" href="Invision LINK">View Prototype</a>
-                </section>    
+                
             </section>
         </section>
         
@@ -472,15 +495,21 @@
         <footer>
             <h3 class="connect">Connect</h3>   
             <ul class="flex-footer">
-                <li class="email" a href="mailto:michellemaile29@gmail.com">
+                <a href="mailto:michellemaile29@gmail.com">
+                    <div class="email">
                     <img src="assets/email.png" alt="E-mail me">
-                </li>
-                <li class="linkedin" a href="https://www.linkedin.com/in/michelle-maile/">
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/michelle-maile/">
+                    <div class="linkedin">
                     <img src="assets/linkedin.png" alt="LinkedIn icon">
-                </li>
-                <li class="github" a href="https://github.com/michellemaile">
+                    </div>
+                </a>
+                <a href="https://github.com/michellemaile">
+                    <div class="github">
                     <img src="assets/github.png" alt="GitHub icon">
-                </li>
+                    </div>
+                </a>
             </ul>
         </footer>
         

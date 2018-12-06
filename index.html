@@ -20,7 +20,12 @@
     <body>
 <!--header-->
         <header>
+            <section class="mobile">
             <div id="topNav" class="navigation">
+                <a href ="index.html">
+                <img class="mm-logo" src="assets/MM-logo.png" alt="Michelle Maile Logo">
+                </a>
+                
                 <span id="closebtn" onclick="navToggle()">
                 <span class="line1"></span>
                 <span class="line2"></span>
@@ -28,7 +33,7 @@
                 </span>
 
                 <ul class="navham">
-                <li><a class="menuitems" href="index.html">Projects</a></li>		
+                <li><a class="menuitems" href="index.html#target">Projects</a></li>		
                 <li><a class="menuitems" href="assets/Maile%20Resume.png">Resume</a></li>				
                 <li><a class="menuitems" href="bio.html">About</a></li>
                 <li><a class="menuitems" href="mailto:michellemaile29@gmail.com">Contact</a></li>
@@ -37,6 +42,7 @@
 
             <div id="main">
             </div>
+            </section>
             
         </header>
          
@@ -52,20 +58,27 @@
             </h5>
         </div>
     </div>
-         </section>
+</section>
         
 <!--projects-->
-        <section class="projects">
+        <section class="projects" id="target">
+            
             <div class="brainspace">
-            <div class="brainspace-copy">
+                
+            <div class="project-copy">
                 <h3 class="role">Product Design and Branding</h3>
                 <h2 class="project-name">BrainSpace</h2>
                 <h5 class="index-project-description">SaaS cloud storage and collaboration platform</h5>
-                <a class="button center" href="brainspace.html">View case study
+                <a class="button index" href="brainspace.html">View case study
                 </a>
             </div>
+              
+            <div class="project-preview">  
             <img class="brainspace-preview" src="assets/brainspace/brainspace_preview.png" alt="BrainSpace screen preview">
+            </div> 
+                
             </div>
+            
         </section>
     </div> 
         

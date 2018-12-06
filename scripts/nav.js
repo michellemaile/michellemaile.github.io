@@ -17,7 +17,7 @@ close.addEventListener("click", function(){
 
 function navToggle() {	
 	//to close
-	if (nav.style.height <= "150px") {
+	if (nav.style.height <= "180px") {
 	nav.style.height = "50px";
 	main.style.marginTop = "50px";
 	
@@ -31,14 +31,13 @@ function navToggle() {
 	} 
 	//to open
 	else if (nav.style.height <= "50px") {
-	nav.style.height = "150px";
-	main.style.marginTop = "150px";
+	nav.style.height = "180px";
+	main.style.marginTop = "180px";
     	var i = 0;
     	for (i = 0; i < menu.length; i++){
 	menu[i].style.opacity="1.0";
 	menu[i].style.marginTop="0px";
 	};
-    	document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 	
 	}
 

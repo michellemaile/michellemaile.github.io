@@ -66,7 +66,7 @@ h4 {
     font-size: 1.8rem;
 }
 
-h5.findings, .tagline, index-project-description, .solution-description, .use-feature {
+h5.findings, .tagline, .index-project-description, .solution-description, .use-feature {
     font-size: 1.8rem;
 }
 
@@ -101,14 +101,17 @@ p.survey-quotes {
 
 
 @media screen and (min-width: 768px) {
+/*
 h1.my-name {
     font-size: 3.0rem;
 }
+*/
     
 h1.project-title {
     font-size: 7.2rem;
     }
 
+/*
 h2.project-name {
     font-size: 6.4rem;
 }
@@ -116,6 +119,7 @@ h2.project-name {
 h2.ux-designer {
     font-size: 7.2rem;
 }
+*/
 
 h3 {
     font-size: 2rem;
@@ -129,11 +133,13 @@ h4.view {
     font-size: 1.8rem; 
     }
 
+/*
 h5.tagline {
     font-size: 3.6rem;
     }
+*/
        
-.findings, .solution-description, .use-feature, conclusion-sections, {
+.findings, .solution-description, .use-feature, conclusion-sections {
     font-size: 2rem;
 }
 
@@ -170,59 +176,124 @@ p.percentages {
 
 
 .hero { 
-    background-image: url("../assets/hero-smith-vintage.png");
-    height: 500px; 
-    width: 100%;
+    background-image: url("../assets/hero-dark-water.png");
+    min-height: 640px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-
 .hero-copy {
-    padding: 2rem;
+    padding: 10rem 5rem;
+    line-height: 400%;
 }
 
-
-/*
 h1.my-name, h3.role {
     color: #EE701B;
     padding: 1rem 0;
 }
-*/
 
-/*
 h5.tagline {
-    padding: 2.5rem 0;
-}
-*/
-
-/*index projects*/
-
-.brainspace-copy {
-    padding: 2rem;
-}
-
-h5.index-project-description {
+    color: white;
     padding: 2rem 0;
+    width: 80%;
 }
 
-.brainspace-preview{
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.index-project-description {
-    font-size: 1.8rem;
+h2.ux-designer {
+    color: white;
 }
 
 @media screen and (min-width: 768px) {
-    .brainspace-preview {
-        width: 90%;
+    .hero-copy {
+        width: 75%;
     }
+}
+
+/*index projects*/
+
+.project-copy {
+    padding: 0 5rem;
+}
+
+.brainspace {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: .1rem;
+    padding: 2rem 0;
+    width: 80%;
+    margin: 5rem auto;
+}
+
+.index-project-description {
+    padding: 2rem 0;
+    width: 80%;
+}
+
+.button, .index {
+    margin: 0;
+}
+
+.project-preview {
+    text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+    .brainspace-preview {
+        width: 40%;
+    }
+
+.brainspace {
+    display: flex;
+    flex-direction: row;
+}
+
+}
+
+
+/*bio*/
+
+.bio-photo { 
+    width: 100%;
+    height: auto;
+}
+
+.bio {
+    font-size: 3rem;
+    line-height: 150%;
+}
+
+.bio-text {
+    padding: 2rem;
+}
+
+.bio-section-head {
+    margin: 1rem 0;
+}
+
+.bio-section {
+    margin: 3rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    .bio-text {
+        height: 100rem;
+        overflow-y: scroll;
+    }
+    
+    .bio-body {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+    
+    .bio-text {
+        width: 50%;
+    }
+    
 }
 
 
@@ -253,6 +324,11 @@ h2.section-titles {
     text-align: center;
 }
 
+.brainspace-preview {
+    width: 90%;
+    padding-top: 5rem;
+    }
+
 h1.project-title {
     text-align: center;
     padding: 2rem;
@@ -267,6 +343,10 @@ p.project-description {
 @media screen and (min-width: 768px) {
     p.project-description {
         width: 60%;
+    }
+    
+    .brainspace-preview {
+        width: 80%;
     }
 }
 
@@ -304,16 +384,8 @@ p.project-description {
     content: url(../assets/brainspace/background-logo.png);
     }
     
-    .the-problem {
-    grid-area: the-problem;
-    }
-
-    .the-solution {
-    grid-area: the-solution;
-    }
 
     .my-role {
-    grid-area: my-role;
     width: 80%;
     margin: 0 auto;
         padding-top: 0;
@@ -537,9 +609,6 @@ p.survey-quotes {
 
 
 /*user personas*/
-.user-personas {
-    margin: 0 auto;
-}
 
 .txt-user-personas {
     padding: 2rem 0;
@@ -560,9 +629,8 @@ p.survey-quotes {
     text-align: center;
     border-style: solid;
     border-width: .1rem;
-    padding: 2rem;
+    padding: 3rem;
     max-width: 50rem;
-    margin: 0 .5rem;
     background: #f7f7f7;
 }
 
@@ -570,9 +638,10 @@ p.survey-quotes {
     margin: 0 auto;
 }
 
-
 .persona-box {
     padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .img-persona {
@@ -690,21 +759,23 @@ p.persona-info {
 /*user flows*/
 .user-flows {
     background-image: url("../assets/brainspace/flows.png");
-    background: contain no-repeat;
     width: 100%;
-    height: 100%;
+    height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-/*    background-attachment: fixed;*/
 }
 
+.user-flows-txt {
+    padding: 2rem;
+}
 
 .user-flows-textbox {
     text-align: center;
     width: 80%;
     margin: 0 auto;
     background: white;
+    vertical-align: 50%;
 }
 
 
@@ -734,6 +805,18 @@ p.persona-info {
 
 /*wireframes*/
 
+.takeaways {
+    list-style-type: decimal;
+/*    padding: 1.4rem;*/
+}
+
+.takeaway {
+    font-size: 1.4rem;
+    margin: 1rem;
+}
+
+
+
 .wireframes, .landing-page, .dashboard {
     text-align: center;
     display: flex;
@@ -748,13 +831,13 @@ p.persona-info {
 }
 
 .img-dash-wire, .img-land-wire {
-    padding: 2rem 0;
-    width: 80%;
+    padding: 2rem;
+    max-width:  330px; 
 }
 
 @media screen and (min-width: 768px) {
   .wireframes {    
-    max-width: 80%;
+    max-width: 70%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -774,17 +857,13 @@ p.persona-info {
     padding: 2rem;
     width: 80%;
     margin: 0 auto;
+    text-align: left;
 }
 
 .land-iterations {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 0;
-}
-
-.land {
-    max-width: 335px;
 }
     
 .img-final-design {
@@ -805,20 +884,26 @@ p.persona-info {
 .landA, .landB {    
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
     }
     
-.land {
-        max-width: 270px;
-        padding: 2rem;
+    .land1, .land2, .land3, .land4 {
+    margin: 2rem;
     }
     }
 
 @media screen and (min-width: 1200px) {
     .land-iterations {
         display: flex;
-        flex-direction: row
+        flex-direction: row;
+        justify-content:space-around;
     }
+    
+    .img-land-iterations, .img-land-iterations, .img-land-iterations, .img-land-iterations {
+    }
+
+.img-land-final {
+    width: 500px;
+}
 }
     
 /*dashboard*/
@@ -845,42 +930,41 @@ p.persona-info {
 /*conclusions*/
 
 .conclusions-txt {
-    padding: 2rem 0;
-    text-align: center;
+    text-align: left;
     width: 80%;
     margin: 0 auto;
 }
 
 .conclusion-sections {
-    padding: 2rem;
+    padding: 2rem 0;
+}
+
+.conclusions {
+    padding-bottom: 5rem;
 }
 
 /*footer*/
 footer {
     background-color: #30343f;
     width: 100%;
-    height: 7rem;
+    height: 10rem;
     text-align: center;
     margin: 0 auto;
 }
 
 h3.connect {
+    font-size: 3rem;
     color: #FBFBFB;
-    padding: 1rem;
-}
-
-.email, .linkedin, .github {
-    width: 2rem;
-    padding: 0 2rem;
-    align-content: center;
-    text-align: center;
+    padding: 2rem;
 }
 
 .flex-footer {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    text-align: center;
+    display: inline-flex;
 }
+
+.email, .linkedin, .github {
+    padding: 0 2rem;
+}
+
 
 
