@@ -231,7 +231,7 @@ h2.ux-designer {
     width: 80%;
 }
 
-.button, .index {
+#view-case-study {
     margin: 0;
 }
 
@@ -255,42 +255,42 @@ h2.ux-designer {
 
 /*bio*/
 
-.bio-photo { 
+.my-bio-photo { 
     width: 100%;
     height: auto;
 }
 
-.bio {
+.my-bio {
     font-size: 3rem;
     line-height: 150%;
 }
 
-.bio-text {
+.my-bio-text {
     padding: 2rem;
 }
 
-.bio-section-head {
+.my-bio-section-head {
     margin: 1rem 0;
 }
 
-.bio-section {
+.my-bio-section {
     margin: 3rem 0;
 }
 
 @media screen and (min-width: 768px) {
-    .bio-text {
+    .my-bio-text {
         height: 100rem;
         overflow-y: scroll;
     }
     
-    .bio-body {
+    .my-bio-body {
         display: flex;
         flex-direction: row-reverse;
         flex-grow: 1;
         flex-basis: 0;
     }
     
-    .bio-text {
+    .my-bio-text {
         width: 50%;
     }
     
@@ -960,6 +960,7 @@ h3.connect {
 
 .flex-footer {
     display: inline-flex;
+    flex-direction: row;
 }
 
 .email, .linkedin, .github {
