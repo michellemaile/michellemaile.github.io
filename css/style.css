@@ -161,18 +161,10 @@ p.percentages {
 
 .hero { 
     background-image: url("../assets/hero-grey-flower.jpg");
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-height: 800px;
-/*    width: 100%;*/
-/*    height: auto;*/
-/*    min-height: 640px;*/
-    background-position: center;
+    height: calc(100vh - 50px);
+    width: 100%;
+    background-position: center 35%;
     background-repeat: no-repeat;
-    background-size: cover;
-/*    background-attachment: fixed;*/
 }
 
 h1.my-name {
