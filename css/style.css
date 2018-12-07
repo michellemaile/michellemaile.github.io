@@ -8,6 +8,7 @@ html, body {
      color: #30343f;
     font-family: 'Assistant', sans-serif;
     height: 100%;
+    margin: 0;
 }
 
 
@@ -36,6 +37,10 @@ html, body {
 
 b {
     font-weight: 900;
+}
+
+l {
+    font-weight: 300;
 }
 
 h1 {
@@ -101,25 +106,10 @@ p.survey-quotes {
 
 
 @media screen and (min-width: 768px) {
-/*
-h1.my-name {
-    font-size: 3.0rem;
-}
-*/
     
 h1.project-title {
     font-size: 7.2rem;
     }
-
-/*
-h2.project-name {
-    font-size: 6.4rem;
-}
-    
-h2.ux-designer {
-    font-size: 7.2rem;
-}
-*/
 
 h3 {
     font-size: 2rem;
@@ -132,12 +122,6 @@ h4 {
 h4.view {
     font-size: 1.8rem; 
     }
-
-/*
-h5.tagline {
-    font-size: 3.6rem;
-    }
-*/
        
 .findings, .solution-description, .use-feature, conclusion-sections {
     font-size: 2rem;
@@ -176,44 +160,58 @@ p.percentages {
 
 
 .hero { 
-    background-image: url("../assets/hero-dark-water.png");
-    min-height: 640px;
+    background-image: url("../assets/hero-grey-flower.jpg");
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+height: 800px;
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    min-height: 640px;*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+/*    background-attachment: fixed;*/
 }
 
-.hero-copy {
-    padding: 10rem 5rem;
-    line-height: 400%;
-}
-
-h1.my-name, h3.role {
-    color: #EE701B;
-    padding: 1rem 0;
+h1.my-name {
+    font-family: "assistant";
+    font-size: 3.0rem;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-top: 12rem;
+   
 }
 
 h5.tagline {
-    color: white;
     padding: 2rem 0;
-    width: 80%;
+    text-align: center;
+/*    width: 80%;*/
 }
 
-h2.ux-designer {
-    color: white;
-}
 
 @media screen and (min-width: 768px) {
-    .hero-copy {
-        width: 75%;
+    h1.my-name {
+    letter-spacing: 9px;
     }
 }
 
 /*index projects*/
 
 .project-copy {
-    padding: 0 5rem;
+    padding-left: 5rem;
+}
+
+.project-name {
+    padding: 1rem 0;
+}
+
+h3.role {
+    color: #7C5D58;
+    padding: 1rem 0;
+    font-family: "assistant";
+    font-size: 1.6rem;
 }
 
 .brainspace {
@@ -226,10 +224,6 @@ h2.ux-designer {
     margin: 5rem auto;
 }
 
-.index-project-description {
-    padding: 2rem 0;
-    width: 80%;
-}
 
 #view-case-study {
     margin: 0;
@@ -544,6 +538,7 @@ p.survey-quotes {
     width: 90%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
       }
 
 .dropbox, .google, .sugarsync {
@@ -567,13 +562,15 @@ p.survey-quotes {
 
 .content-dash-analysis {
     margin: 0 auto;
-    width: 90%;
+    max-width: 850px;
     display: flex;
     flex-direction: column;
 }
 
 .txt-dash-analysis {
     padding: 1rem;
+    width: 90%;
+    margin: 0 auto;
     text-align: left;
 }
 
@@ -594,21 +591,32 @@ p.survey-quotes {
       }
   
   .txt-dash-analysis {
-     flex-flow: column wrap;
-     flex: 1 1 0;
+      grid-area: txt-dash-analysis;
      margin: 0 .5rem ;
   }
   
   .img-dash-analysis {
-     flex: 1 1 0;
+      grid-area: img-dash-analysis;
      margin: 0 .5rem;
   }
     
-
+    .content-dash-analysis {
+      display: grid;
+      margin: 0 auto;
+      grid-column-gap: 2rem;
+      grid-row-gap: 0;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+          "img-dash-analysis txt-dash-analysis";
   }
+}
 
 
 /*user personas*/
+
+.user-personas {
+    align-content: center;
+}
 
 .txt-user-personas {
     padding: 2rem 0;
@@ -630,7 +638,7 @@ p.survey-quotes {
     border-style: solid;
     border-width: .1rem;
     padding: 3rem;
-    max-width: 50rem;
+/*    max-width: 50rem;*/
     background: #f7f7f7;
 }
 
@@ -671,8 +679,8 @@ p.persona-info {
 }
 
 @media screen and (min-width: 768px) {
-  .persona-profiles {    
-    width: 90%;
+  .persona-profiles { 
+      width: 70%;
     display: flex;
     flex-direction: row;
       }
@@ -797,6 +805,14 @@ p.persona-info {
     margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+    .img-logos {
+        width: 70%;
+    }
+}
+
+
+
 /*TITLE wireframes and mockups section*/
 
 .wireframes-and-mockups {
@@ -807,15 +823,12 @@ p.persona-info {
 
 .takeaways {
     list-style-type: decimal;
-/*    padding: 1.4rem;*/
 }
 
 .takeaway {
     font-size: 1.4rem;
     margin: 1rem;
 }
-
-
 
 .wireframes, .landing-page, .dashboard {
     text-align: center;
@@ -887,18 +900,15 @@ p.persona-info {
     }
     
     .land1, .land2, .land3, .land4 {
-    margin: 2rem;
+    margin: .5rem;
     }
     }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
     .land-iterations {
         display: flex;
         flex-direction: row;
-        justify-content:space-around;
-    }
-    
-    .img-land-iterations, .img-land-iterations, .img-land-iterations, .img-land-iterations {
+/*        justify-content:space-around;*/
     }
 
 .img-land-final {
@@ -909,7 +919,7 @@ p.persona-info {
 /*dashboard*/
 
 .dash-txt {
-    padding: 2rem 0;
+    padding: 4rem 0;
     text-align: left;
     width: 80%;
     margin: 0 auto;
@@ -922,6 +932,11 @@ p.persona-info {
 .img-dash-final {
     width: 80%;
 }
+
+.dash-view, .file-view {
+    margin: 3rem 0;
+}
+
 
 
     
