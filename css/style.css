@@ -5,7 +5,7 @@
 html, body {
     font-size: 10px;
     line-height: 250%;
-     color: #30343f;
+    color: #30343f;
     font-family: 'Assistant', sans-serif;
     height: 100%;
     margin: 0;
@@ -85,6 +85,8 @@ h5.implementation, .function, .persona-quote, conclusion-sections, .comp, .itera
 
 p {
     font-size: 1.2rem;
+    max-width: 550px;
+    margin: 0 auto;
 }
 
 p.descriptions {
@@ -173,30 +175,41 @@ h1.my-name {
     letter-spacing: 3px;
     text-align: center;
     padding-top: 12rem;
-   
 }
+    @media screen and (min-width: 768px) {
+        h1.my-name {
+        letter-spacing: 9px;
+        }
+    }
 
 h5.tagline {
     padding: 2rem 0;
     text-align: center;
-/*    width: 80%;*/
 }
 
-
-@media screen and (min-width: 768px) {
-    h1.my-name {
-    letter-spacing: 9px;
-    }
-}
 
 /*index projects*/
 
-.project-copy {
-    padding-left: 5rem;
+.brainspace {
+    display: flex;
+    flex-direction: column;
+    border: .1rem solid;
+    padding: 2rem 0;
+    width: 80%;
+    max-width: 800px;
+    margin: 5rem auto;
 }
 
-.project-name {
-    padding: 1rem 0;
+    @media screen and (min-width: 768px) {
+        .brainspace {
+        display: flex;
+        flex-direction: row;
+        }
+    }
+
+.project-copy {
+    padding-left: 5rem;
+    padding-top: 2rem;
 }
 
 h3.role {
@@ -206,23 +219,13 @@ h3.role {
     font-size: 1.6rem;
 }
 
-.brainspace {
-    display: flex;
-    flex-direction: column;
-    border-style: solid;
-    border-width: .1rem;
-    padding: 2rem 0;
-    width: 80%;
-    margin: 5rem auto;
-}
-
-
 #view-case-study {
     margin: 0;
 }
 
 .project-preview {
     text-align: center;
+    max-width: 400px;
 }
 
 
@@ -230,12 +233,6 @@ h3.role {
     .brainspace-preview {
         width: 40%;
     }
-
-.brainspace {
-    display: flex;
-    flex-direction: row;
-}
-
 }
 
 
@@ -295,13 +292,12 @@ h2.section-titles {
     padding: 2rem;
 }
 
-
-@media screen and (min-width: 768px) {
-    .section-titles {
-        width: 40%;
-        padding: 5rem 0;
+    @media screen and (min-width: 768px) {
+        .section-titles {
+            width: 40%;
+            padding: 5rem 0;
+        }
     }
-}
 
 
 /*project hero*/
@@ -335,7 +331,6 @@ p.project-description {
         width: 80%;
     }
 }
-
 
 
 /*overview*/
@@ -746,7 +741,7 @@ p.persona-info {
 /*user stories*/
 
 .user-stories {
-    padding: 2rem 0;
+    padding: 5rem 0;
     text-align: center;
     width: 80%;
     margin: 0 auto;
@@ -758,12 +753,14 @@ p.persona-info {
 
 /*user flows*/
 .user-flows {
-    background-image: url("../assets/brainspace/flows.png");
+    background-image: url("../assets/brainspace/flows.svg");
     width: 100%;
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
 }
 
 .user-flows-txt {
@@ -775,7 +772,6 @@ p.persona-info {
     width: 80%;
     margin: 0 auto;
     background: white;
-    vertical-align: 50%;
 }
 
 
@@ -870,10 +866,19 @@ p.persona-info {
     flex-direction: column;
     margin: 0 auto;
 }
+
+.img-land-iterations {
+    width: 330px;
+}
     
 .img-final-design {
         margin: 0 auto;
     }
+
+.img-land-final {
+    margin: 0 auto;
+    width: 330px;
+}
     
 .iteration {
     padding: 2rem 4rem;
@@ -900,7 +905,6 @@ p.persona-info {
     .land-iterations {
         display: flex;
         flex-direction: row;
-/*        justify-content:space-around;*/
     }
 
 .img-land-final {
@@ -954,13 +958,13 @@ p.persona-info {
 footer {
     background-color: #30343f;
     width: 100%;
-    height: 10rem;
+    height: 12rem;
     text-align: center;
     margin: 0 auto;
 }
 
 h3.connect {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #FBFBFB;
     padding: 2rem;
 }
