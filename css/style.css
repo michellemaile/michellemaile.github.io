@@ -212,6 +212,10 @@ h5.tagline {
 .project-copy {
     padding-left: 5rem;
     padding-top: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    text-align: left;
+    max-width: 300px;
 }
 
 h3.role {
@@ -221,19 +225,31 @@ h3.role {
     font-size: 1.6rem;
 }
 
-#view-case-study {
-    margin: 0;
+.view-case-study {
+    border: .2rem solid #30343f; 
+    font-size: 1.4rem;
+    font-family: 'assistant';
+    color: #30343f;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+    display: inline-block;
+    min-width: 160px;
+    max-width: 200px;
+    margin: 2rem auto;
 }
 
 .project-preview {
     text-align: center;
     max-width: 400px;
+    margin: 0 auto;
 }
 
 
 @media screen and (min-width: 768px) {
     .brainspace-preview {
-        width: 40%;
+        width: 400px;
     }
 }
 
@@ -494,6 +510,12 @@ p.survey-quotes {
     width: 60%;
     margin: 0 auto;
 }
+/*
+    .button-space {
+        
+        margin: 0 2rem;
+    }
+*/
 }
 
 /*swot analysis*/
@@ -613,6 +635,7 @@ p.survey-quotes {
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: center;
     margin: 0 auto;
 }
 
@@ -809,6 +832,7 @@ p.persona-info {
 /*TITLE wireframes and mockups section*/
 
 .wireframes, .landing-page, .dashboard {
+    align-content: center;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -939,10 +963,10 @@ p.persona-info {
     margin: 3rem 0;
 }
 
+.bottom-button {
+    margin: 0 auto;
+}
 
-
-    
-    
 
 /*conclusions*/
 
