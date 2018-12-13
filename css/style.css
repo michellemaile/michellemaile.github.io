@@ -7,7 +7,6 @@ html, body {
     line-height: 250%;
     color: #30343f;
     font-family: 'Assistant', sans-serif;
-    height: 100%;
     margin: 0;
 }
 
@@ -283,14 +282,18 @@ h3.role {
         height: calc(100vh - 170px);
         overflow-y: scroll;
         padding: 5rem;
+        width: 70%;
     }
     
     .my-bio-body {
+    height: calc (100vh-50px);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
         display: flex;
         flex-direction: row-reverse;
         flex-grow: 1;
         flex-basis: 0;
-        height: calc(100vh - 170px);
     }
     
     .my-bio-photo { 
@@ -298,10 +301,6 @@ h3.role {
         width: 100%;
         background-repeat: no-repeat;
         align-content: flex-end;
-        }
-    
-    .my-bio-text {
-        width: 70%;
         }
     }
 
