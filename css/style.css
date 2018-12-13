@@ -256,6 +256,10 @@ h3.role {
 
 /*bio*/
 
+.bio-page {
+    height: 100vh;
+}
+
 .my-bio-photo { 
     width: 100%;
     height: auto;
