@@ -7,6 +7,7 @@ html, body {
     line-height: 250%;
     color: #30343f;
     font-family: 'Assistant', sans-serif;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -34,132 +35,115 @@ html, body {
 
 
 
-/*font families*/
+/*FONT FAMILIES*/
+
 
 b {
     font-weight: 900;
-}
+    }
 
 l {
     font-weight: 300;
-}
+    }
 
-h1 {
+h1.my-name, .my-bio {
     font-family: 'oswald';
     font-size: 1.8rem;
-}
+    }
 
 h1.project-title {
     font-size: 3.6rem;
-}
+    }
 
 h2 {
     font-family: 'oswald';
     font-size: 2.4rem;
-}
+    }
 
 h2.ux-designer, .project-name {
     font-size: 3.0rem;
-}
+    }
 
 h3 {
     font-family: 'fjalla one';
+    font-size: 3rem;
+    }
+
+h3.roles-titles {
     font-size: 1.8rem;
-}
+    }
 
 h4 {
     font-family: 'oswald';
     font-size: 1.8rem;
-}
+    }
 
-h5.findings, .tagline, .index-project-description, .solution-description, .use-feature {
+h4.persona-name {
+    font-size: 2.4rem;
+    padding-bottom: 2rem;
+    }
+
+h5.tagline, .index-project-description, .use-feature {
     font-size: 1.8rem;
-}
+    }
 
 h5.implementation, .function, .persona-quote, conclusion-sections, .comp, .iteration {
     font-size: 1.4rem;
-}
-
-.bio-title, .goals-title, .frustrations-title {
-    font-size: 1.2rem;
-}
+    }
 
 p {
-    font-size: 1.2rem;
-    max-width: 600px;
+    font-size: 1.4rem;
+    max-width: 800px;
+    text-align: left;
     margin: 0 auto;
+    padding: 3rem 0;
+    }
+
+.reason {
+    align-content: center;
+    margin: 0 auto;
+    font-size: 1.4rem ;
+    padding-top: 1rem;
+    color: #006494
 }
 
-p.descriptions {
-    font-size: 1.4rem;
-}
-
-p.project-description {
-    padding-top: 2rem;
-}
-
-p.percentages {
-    font-size: 2.4rem;
-}
-
-p.survey-quotes {
-    font-size: 1.4rem;
-}
-
-
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 990px) {
     
 h1.project-title {
     font-size: 7.2rem;
     }
 
-h3 {
-    font-size: 2rem;
-}
-
 h4 {
     font-size: 2.4rem;
-}
+    }
     
-h4.view {
+h4.solution {
     font-size: 1.8rem; 
     }
+    
+h4.view {
+    font-size: 2rem; 
+    }    
        
-.findings, .solution-description, .use-feature, conclusion-sections {
+.use-feature, conclusion-sections {
     font-size: 2rem;
-}
+    }
 
-h5.implementation, .function,  .initial-design, .comp, .bio-title, .goals-title, .frustrations-title {
+.initial-design, .comp {
     font-size: 1.8rem;
-}
+    }
 
 p {
     font-size: 1.8rem;
-}
-
-p.descriptions {
-    font-size: 1.8rem;}
-    
+    }
+        
 .persona-quote {
     font-size: 1.6rem;
-}
-
-.bio, .frustrations, .goals {
-    font-size: 1.4rem;
-}    
-    
-.survey-quotes, p.project-descriptions {
-    font-size: 2rem;
-}
-
-p.percentages {
-    font-size: 4.8rem;
-}      
+    }   
 }
 
 
-/*index hero*/
+/*INDEX hero*/
 
 
 .hero { 
@@ -184,93 +168,107 @@ h1.my-name {
     }
 
 h5.tagline {
-    padding: 2rem 0;
+    padding: 2rem;
     text-align: center;
 }
 
 
-/*index projects*/
+/*INDEX projects*/
 
-.brainspace {
-    display: flex;
-    flex-direction: column;
-    border: .1rem solid;
-    padding: 2rem 0;
-    width: 80%;
-    max-width: 800px;
-    margin: 5rem auto;
+.project-brainspace {
+    text-align: center;
 }
 
-    @media screen and (min-width: 768px) {
-        .brainspace {
-        display: flex;
-        flex-direction: row;
+.project-brainspace-lg {
+  display: block;
+  overflow: hidden;
+ grid-area: project-brainspace-lg;
+    background: red;
+}
+
+.project-brainspace {
+    background: #F6F8F8;
+    display: grid;
+    grid-gap: 0 2.4rem;
+    grid-template-columns: 46rem 1fr 1fr;
+    justify-items: left;
+    overflow: hidden;
+  }
+  
+  .project-brainspace {
+    grid-template-areas: "project-brainspace-copy project-brainspace-gap project-brainspace-lg";
+  }
+
+.project-brainspace {
+  grid-area: project-brainspace;
+}
+
+.project-brainspace-copy {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 3rem 2rem 3rem;
+  background-image: url(../images/brainspace-mobile.png);
+  background-position: center;
+  grid-area: project-brainspace-copy;
+}
+
+project-brainspace-gap {
+  grid-area: project-brainspace-gap;
+}
+
+@media screen and (min-width: 990px) {
+    
+      .project-brainspace {
+    background: #F6F8F8;
+    display: grid;
+    grid-gap: 0 2.4rem;
+    grid-template-columns: 2rem 1fr 1fr;
+    justify-items: left;
+    overflow: hidden;
+  }
+    .project-brainspace {
+    grid-template-areas: "project-brainspace-copy project-brainspace-gap project-brainspace-lg";
+  }
+  
+    .project-brainspace-gap {
+	border-left: 2.4rem solid white;
+    display:inline-block;
+    height: 100%;
+    margin: 0 0 0 10rem;
+	overflow: hidden;
+	position: relative;
+    -webkit-transform: skew(-15deg);
+	-moz-transform: skew(-15deg);
+	-o-transform: skew(-15deg);
+	transform: skew(-15deg);
+
+  }
+    
+}
+
+/*BIO*/
+
+    @media screen and (min-width: 990px) {
+        .bio-container {
+            width: 990px;
         }
     }
-
-.project-copy {
-    padding-left: 5rem;
-    padding-top: 2rem;
-    margin: 0 auto;
-    text-align: center;
-    text-align: left;
-    max-width: 300px;
-}
-
-h3.role {
-    color: #7C5D58;
-    padding: 1rem 0;
-    font-family: "assistant";
-    font-size: 1.6rem;
-}
-
-.view-case-study {
-    border: .2rem solid #30343f; 
-    font-size: 1.4rem;
-    font-family: 'assistant';
-    color: #30343f;
-    padding: 1rem 2rem;
-    text-align: center;
-    text-decoration: none;
-    transition: all .5s ease-in-out;
-    display: inline-block;
-    min-width: 160px;
-    max-width: 200px;
-    margin: 2rem auto;
-}
-
-.project-preview {
-    text-align: center;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-
-@media screen and (min-width: 768px) {
-    .brainspace-preview {
-        width: 400px;
-    }
-}
-
-
-/*bio*/
 
 .my-bio-photo { 
     width: 100%;
     height: auto;
-}
+    align-content: right;
+    }
 
 .my-bio {
     font-size: 3rem;
     line-height: 150%;
-}
-
-.my-bio-text {
-    padding: 2rem;
-}
+    }
 
 .my-bio-section-head {
-    margin: 1rem 0;
+    align-content: left;
 }
 
 .my-bio-section {
@@ -306,146 +304,131 @@ h3.role {
 
 
 
-/*project-general*/
-h3.section-sub-titles {
-    padding: 2rem 0;
+/*PROJECT-general*/
+.project-container {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
 }
 
-h2.section-titles {
-    color: #FBFBFB;
-    background-color: #006494;
-    padding: 2rem;
-}
+    @media screen and (min-width: 575px) {
+        .project-container {
+            width: 575px;
+        }   
+    }
 
-    @media screen and (min-width: 768px) {
-        .section-titles {
-            width: 40%;
-            padding: 5rem 0;
+    @media screen and (min-width: 990px) {
+        .project-container {
+            width: 960px;
         }
     }
 
-
-/*project hero*/
-
-.project-hero {
-    text-align: center;
-}
-
-.brainspace-preview {
-    width: 90%;
+h3.section-titles {
     padding-top: 5rem;
-    }
-
-h1.project-title {
-    text-align: center;
-    padding: 2rem;
 }
 
 p.project-description {
     text-align: center;
+}
+
+
+.case-study-section {
+  background: #F6F8F8;
+  margin: 2.4rem auto;
+  padding: 0 3.6rem 2.6rem 3.6rem;
+}
+
+.image-section {
+    margin: 2.4rem auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.link {
+    color: #EE701B;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
+/*PROJECT: project-hero*/
+
+.brainspace-preview {
     width: 90%;
-    margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) {
-    p.project-description {
-        width: 60%;
     }
-    
-    .brainspace-preview {
-        width: 80%;
-    }
-}
 
-
-/*overview*/
-.overview {
-    background-color: #F7F7F7;
-    max-width: 800px;
-}
-
-.the-problem, .the-solution, .my-role {
+h1.project-title {
     padding: 2rem;
 }
 
-.the-problem {
-    grid-area: the-problem;
-}
 
-.the-solution {
-    grid-area: the-solution;
-}
+/*PROJECT: my roles*/
 
-.my-role {
-    grid-area: my-role;
-    padding-bottom: 5rem;
+.roles ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
-@media screen and (min-width: 768px) {
-    .overview-logo {
-    grid-area: overview-logo;
-    width: 100%;
-    padding-top: 5rem;
-    padding-left: 5rem;
-    content: url(../assets/brainspace/background-logo.png);
-    }
     
-
-    .my-role {
-    width: 80%;
-    margin: 0 auto;
-        padding-top: 0;
-    }
-    
-    .overview {
-      display: grid;
-      margin: 0 auto;
-      grid-column-gap: 2rem;
-      grid-row-gap: 0;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: 
-          "overview-logo the-problem"
-          "overview-logo the-solution"
-          "my-role my-role";
-      }
-
+    @media screen and (min-width: 575px) { 
+        .roles ul {
+            display: flex;
+            flex-direction: row;
+        }
+        
+         .roles li {
+            display: inline-block;
+            vertical-align: top;
+            width: 30%;
+        }
     }
 
 
-/*TITLE discovery section*/
-
-
-
-@media screen and (min-width: 768px) {
-.discovery, .information-architecture, branding-and-identity, .wireframes-and-mockups, .conclusions {
-    padding: 5rem 0;
-}
-}
-
-
-/*user research*/
-.user-research {
-    padding: 2rem 0;
+.roles-paragraph {
     text-align: center;
-    width: 80%;
-    margin: 0 auto;
+    padding: .5rem;
 }
 
-.chart-1 {
-    grid-area: chart-1;
+hr.role {
+    width: 100px;
 }
 
-.chart-2 {
-    grid-area: chart-2;
+    @media screen and (min-width: 990px) { 
+        hr.role {
+            width: 200px;
+        }
+    }
+
+/*PROJECT: problem and solution*/
+
+.overview {
+    display: flex;
+    flex-direction: column;
+    
 }
 
-.chart-3 {
-    grid-area: chart-3;
-}
+    @media screen and (min-width: 575px) {    
+        .overview {
+            display: flex;
+            flex-direction: row;
+        }
+    }
 
-.chart-4 {
-    grid-area: chart-4;
-}
+
+/*PROJECT: user research*/
+
+.chart-1 {grid-area: chart-1;}
+
+.chart-2 {grid-area: chart-2;}
+
+.chart-3 {grid-area: chart-3;}
+
+.chart-4 {grid-area: chart-4;}
 
 .pie-charts {
     display: grid;
@@ -454,136 +437,61 @@ p.project-description {
         "chart-1 chart-2"
         "chart-3 chart-4"
 }
-
-.chart-1, .chart-2, .chart-3, .chart-4 {
-    width: 150px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-}
-
-.img-pie-charts {
-    height: 10.4rem;
-    width: 10.4rem;
-    margin: auto;
-}
-
-p.percentages {
-    color: #006494;
-    margin: auto;
-    padding: 1rem;
-}
-
-.use-feature {
-    margin: auto;
-    text-align: center;
-}
-
-.likes-dislikes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-h3.comments {
-    padding: 2rem;
-    text-align: center;
-}
-
-p.survey-quotes {
-    text-align: center;
-}
-
-.lessons-learned {
-    padding: 2rem 5rem;
-    text-align: center;
-    width: 100%;
-    margin: 2rem 0;
-    background-color: #f7f7f7;
-}
-
-@media screen and (min-width: 768px) {
-  .pie-charts {    
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-      }
     
-    .likes-dislikes {
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    margin: 0 auto;
-}
-/*
-    .button-space {
-        
-        margin: 0 2rem;
-    }
-*/
-}
-
-/*swot analysis*/
-
-.txt-intro-swot {
-    padding: 2rem 0;
-    text-align: center;
+.img-pie-charts {
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
 }
+
+    @media screen and (min-width: 575px) {
+        .pie-charts {    
+            display: flex;
+            flex-direction: row;
+        }
+    
+        .img-pie-charts {
+            width: 100%;
+            padding: 1rem;
+        }
+    }
+
+
+/*PROJECT: competitive analysis*/
+
 .SWOT-analysis {
-    margin: 0 auto;
-    width: 90%;
     display: flex;
     flex-direction: column;
 }
 
 .img-SWOT-logos {
     width: 21.5rem;
-    padding: 1rem;
+    margin: 1rem;
     justify-content: center;
+    border: .1rem solid black ;
 }
 
-@media screen and (min-width: 768px) {
-  .SWOT-analysis {    
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-      }
+    @media screen and (min-width: 990px) {
+        .SWOT-analysis {    
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
 
-.dropbox, .google, .sugarsync {
-    width: 30%;
-    padding: 2rem;
-    align-items: center;
-}
-}
+        .dropbox, .google, .sugarsync {
+            width: 30%;
+            padding: 2rem;
+            align-items: center;
+        }
+    }
 
-
-
-/*dash analysis*/
-
-.dash-analysis {
-    text-align: center;
-}
-.title-dash-analysis {
-    padding: 2rem 0;
-    text-align: center;
-}
+/*PROJECT: dash analysis*/
 
 .content-dash-analysis {
-    margin: 0 auto;
-    max-width: 850px;
     display: flex;
     flex-direction: column;
 }
 
 .txt-dash-analysis {
-    padding: 1rem;
-    width: 90%;
-    margin: 0 auto;
     text-align: left;
 }
 
@@ -596,7 +504,7 @@ p.survey-quotes {
     text-align: left;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 990px) {
   .content-dash-analysis {    
     width: 90%;
     display: flex;
@@ -605,12 +513,10 @@ p.survey-quotes {
   
   .txt-dash-analysis {
       grid-area: txt-dash-analysis;
-     margin: 0 .5rem ;
   }
   
   .img-dash-analysis {
       grid-area: img-dash-analysis;
-     margin: 0 .5rem;
   }
     
     .content-dash-analysis {
@@ -627,369 +533,267 @@ p.survey-quotes {
 
 /*user personas*/
 
-.user-personas {
-    align-content: center;
-}
-
-.txt-user-personas {
-    padding: 2rem 0;
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-}
-
 .persona-profiles {
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    margin: 0 auto;
 }
 
 .persona-1, .persona-2 {
     margin: 0 auto;
     text-align: center;
-    border-style: solid;
-    border-width: .1rem;
     padding: 3rem;
-    background: #f7f7f7;
+    background: white;
     width: 335px;
-    height: 1256px;
-}
-
-.img-persona {
-    margin: 0 auto;
+    height: ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .persona-box {
-    padding-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-bottom: 3rem;
+}
+
+.persona-info {
+    text-align: center;
+    padding: 1rem;
 }
 
 .img-persona {
     width: 150px;
 }
 
-.bio, .goals, .frustrations {
+h5.persona-title {
     text-align: left;
-}
-
-h5.bio-title, .goals-title, .frustrations-title {
+    font-size: 1.4rem;
     padding: 1rem 0;
-    text-align: left;
 }
 
-.persona-quote, .persona-name {
-    padding: 2rem;
+.persona-descriptions {
+    padding: 0;
 }
 
-p.persona-info {
-    text-align: center;
-    padding-bottom: 2rem;
+.persona-quote {
+    padding: 4rem 0;
 }
 
-.btn-persona {
-    text-align: center;
-}
 
-@media screen and (min-width: 768px) {
-  .persona-profiles { 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-      }
-}
+    @media screen and (min-width: 575px) {
+        .persona-1, .persona-2 {
+            width: 400px;
+            height: 900px;
+        }
+    }
+
+    @media screen and (min-width: 990px) {
+      .persona-profiles { 
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        .persona-box {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        
+        .persona-1, .persona-2 {
+            width: 400px;
+            height: 1050px;
+        }
+    }
   
 
 
 /*three findings*/
 
-.img-icon {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.solution {
-    margin: 2rem 0 0 0;
-}
-
-.txt-findings {
-    width: 80%;
+.layers, .sort, .notifications {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
     margin: 0 auto;
-    text-align: center;
 }
 
 .img-icon {
     width: 7rem;
-    margin: 0 auto;
+}
+
+.solution {
+    margin-top: 2rem;
 }
 
 .findings-boxes {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+}
+
+.findings-descriptions {
+    padding: 0;
 }
 
 .implementation, .function {
-    padding: 2rem 0 0 0;
-}
-
-.layers, .sort, .notifications {
-    border-style: solid;
-    border-width: .1rem;
-    padding: 2rem;
-    max-width: 35rem;
-    margin: 0 .5rem;
-    background: #f7f7f7;
+    padding: 1rem;
 }
 
 .box {
-    padding-bottom: 2rem;
-    margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) {
-.findings-boxes {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-  justify-content: space-evenly;
-}
-    
-    .layers, .sort, .notifications {
-        min-height: 45rem;
-}
-}
-
-@media screen and (min-width: 1006px){
-    .layers, .sort, .notifications {
-        min-height: 35rem;
-}
-}
-    
-/*TITLE information architecture section*/
-    
-/*user stories*/
-
-.user-stories {
-    padding: 5rem 0;
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.btn-user-stories {
-    margin: 0 auto;
-}
-
-/*user flows*/
-.user-flows {
-    background-image: url("../assets/brainspace/flows.svg");
-    width: 100%;
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-}
-
-.user-flows-txt {
-    padding: 2rem;
-}
-
-.user-flows-textbox {
-    margin: 0 auto;
-    background: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
+    padding: 2rem;
+    max-width: 35rem;
+    background: white;
 }
 
 
-/*TITLE branding and identity section*/
-.branding-and-identity {
-    text-align: center;
-    padding-top: 5rem;
-}
+    @media screen and (min-width: 990px) {
+        .findings-boxes {
+          display: flex;
+          flex-direction: row;
+          flex-grow: 1;
+          justify-content: space-evenly;
+        }
+    
+        .layers, .sort, .notifications {
+            padding: 0 1rem;
+        }
+    }
+    
+/*PROJECT: user stories*/
 
-.txt-branding {
-    padding: 2rem 0;
-    text-align: left;
-    margin: 0 auto;
-}
+/*PROJECT: user stories IMAGE*/
+
+    .user-stories-img {
+        width: 100%
+    }
+
+/*PROJECT: user flows*/
+
+/*PROJECT: user flows IMAGE*/
+
+    .user-flows-img {
+        width: 100%;
+    }
+
+
+/*PROJECT: branding and identity*/
 
 .img-logos {
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 10rem;
-    padding-top: 5rem;
-}
-
-@media screen and (min-width: 768px) {
-    .img-logos {
-        width: 70%;
-    }
+    width: 100%;
 }
 
 
 
-/*TITLE wireframes and mockups section*/
+/*PROJECT: wireframes*/
 
-.wireframes, .landing-page, .dashboard {
-    align-content: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+.drawn-wireframes-img {
+    width: 100%;
 }
-
-.wireframes-and-mockups {
-    background: #f7f7f7;
-    margin: 0 auto;
-}
-
-/*wireframes*/
 
 .takeaways {
-    list-style-type: decimal;
-}
-
-.takeaway {
-    font-size: 1.4rem;
-    margin: 1rem;
-}
-
-.txt-wire {
-    padding: 2rem 0;
-    text-align: left;
-    width: 80%;
     margin: 0 auto;
+    padding: 1rem 0;
+    list-style-type: circle;
 }
 
-.img-dash-wire, .img-land-wire {
-    padding: 2rem;
-    max-width:  330px; 
+.wireframe-case-study-section {
+  margin: 2.4rem auto;
+  padding: 0 3.6rem 2.6rem 3.6rem;
 }
 
-@media screen and (min-width: 768px) {
+.wireframes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.land-wire, .dash-wire {
+    padding: 2.6rem 2rem 0 2rem;
+}
+
+.img-land-wire, .img-dash-wire {
+    width: 330px;
+}
+
+
+@media screen and (min-width: 990px) {
   .wireframes {    
-    max-width: 70%;
-    height: auto;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
       }
 }
-  
-  .wire-left, .land-wire {
-    border: 1px;
-    flex: 1 1 0;
-  }
-  
 
-/*landing page*/
 
-.txt-landing-page {
-    padding: 2rem;
-    width: 80%;
-    margin: 0 auto;
-    text-align: left;
-}
+  
+/*PROJECT: landing page*/
 
 .land-iterations {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-}
-
-.img-land-iterations {
-    width: 330px;
-}
-    
-.img-final-design {
-        margin: 0 auto;
+    justify-content: center;
     }
 
-.img-land-final {
-    margin: 0 auto;
+.img-land-iterations, .img-land-final {
     width: 330px;
-}
-    
-.iteration {
-    padding: 2rem 4rem;
-    text-align: center;
     }
-    
-.view {
-    margin: 0 auto;
-    font-size: 1.6rem;
-}
-    
-@media screen and (min-width: 768px) {
-.landA, .landB {    
-    display: flex;
-    flex-direction: row;
-    }
-    
-    .land1, .land2, .land3, .land4 {
+
+.land1, .land2, .land3, .land4 {
     margin: .5rem;
     }
+    
+    
+    @media screen and (min-width: 575px) {
+        .landA, .landB {    
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            }
+
+        .img-land-iterations {
+            width: 250px;
+            }
     }
 
-@media screen and (min-width: 1400px) {
-    .land-iterations {
-        display: flex;
-        flex-direction: row;
-    }
+    @media screen and (min-width: 990px) {
+        .land-iterations {
+            display: flex;
+            flex-direction: row;
+            }
 
-.img-land-final {
-    width: 500px;
-}
-}
+        .img-land-iterations {
+            width: 220px;
+            }
+
+        .img-land-final {
+            width: 500px;
+            }
+        }
     
 /*dashboard*/
 
-.dash-txt {
-    padding: 4rem 0;
-    text-align: left;
-    width: 80%;
-    margin: 0 auto;
+.img-dash-info, .iteration {
+    padding: 2rem;
 }
 
-.img-dash-iterations {
-    width: 60%;
-}
+.img-dash-iterations, .img-dash-final, .img-dash-info {
+    width: 330px;
+    }
+    
+    @media screen and (min-width: 990px) {
+        .img-dash-iterations, .img-dash-info {
+            width: 500px;
+            }
+        
+        .img-dash-final {
+            width: 700px;
+        }
+    }
 
-.img-dash-final {
-    width: 80%;
-}
-
-.dash-view, .file-view {
-    margin: 3rem 0;
-}
-
-.bottom-button {
-    margin: 0 auto;
-}
-
+   
 
 /*conclusions*/
 
 .conclusions-txt {
-    text-align: left;
-    width: 80%;
-    margin: 0 auto;
+    padding-top: 5rem;
 }
 
-.conclusion-sections {
-    padding: 2rem 0;
-}
-
-.conclusions {
-    padding-bottom: 5rem;
-}
 
 /*footer*/
 footer {

@@ -17,50 +17,69 @@
         
     </head>
     
-    <body>
+<body>
 <!--header-->
-        <header>
-            <section class="mobile">
-            <div id="topNav" class="navigation">
-                <a href ="index.html">
-                <img class="mm-logo" src="assets/MM-logo.png" alt="Michelle Maile Logo">
-                </a>
-                
-                <span id="closebtn" onclick="navToggle()">
-                <span class="line1"></span>
-                <span class="line2"></span>
-                <span class="line3"></span>
-                </span>
-
-                <ul class="navham">
-                <li><a class="menuitems" href="index.html#target">Projects</a></li>		
-                <li><a class="menuitems" href="assets/Maile%20Resume.png">Resume</a></li>				
-                <li><a class="menuitems" href="bio.html">About</a></li>
-                <li><a class="menuitems" href="mailto:michellemaile29@gmail.com">Contact</a></li>
-                </ul>			
-            </div>
-
-            <div id="main">
-            </div>
-            </section>
-            
-        </header>
-         
-     <div class="index-container">
-             
+    
+<div class="nav-bar">  
+<div class="nav">
+  <div class="nav-header">
+    <div class="nav-title">
+      <a href="index.html" class="logo">
+            <img class="mm-logo" src="assets/MM-logo.png" alt="Michelle Maile Logo">
+        </a>
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <input type="checkbox" id="nav-check">
+  <div class="nav-links">
+    <a href="index.html#target">Projects</a>
+    <a href="assets/Maile%20Resume.png" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">Resume</a>
+    <a href="bio.html">About</a>
+    <a href="mailto:michellemaile29@gmail.com" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">Contact</a>
+</div>
+</div>
+    </div>
+        
 <!--hero-->
 <section class="hero">
     <div class="hero-wrapper">
         <div class="hero-copy">
             <h1 class="my-name"><l>MICHELLE SMITH MAILE</l></h1>
-            <h5 class="tagline">I design simple, research-driven, user-focused solutions that are sleek, powerful, and intuitive.
+            <h5 class="tagline">I'm a UX designer and researcher design simple, research-driven, user-focused solutions that are sleek, powerful, and intuitive.
             </h5>
         </div>
     </div>
 </section>
         
 <!--projects-->
-        <section class="projects" id="target">
+    
+    <article class="project-brainspace"> 
+        
+        <section class="project-image-sm">
+          <img src="images/brainspace.png" alt="Brainspace project graphic">
+        </section>
+        
+        <section class="project-brainspace-copy">
+          <h2 class="index-project-title">Brainspace</h2>
+          <p class="index-project-copy">BrainSpace is a Saas cloud storage app that presents a uniquely customizable way to organize and sort files and tasks.</p>
+          <div class="button"><a href="brainspace.html">View Case Study</a></div>
+        </section>
+        
+        <div class="project-brainspace-gap">
+        <div class="project-brainspace-lg"></div></div>
+      </article>
+    
+
+
+
+<!--
+<section class="projects" id="target">
             
             <div class="brainspace">
                 
@@ -82,31 +101,34 @@
             </div>
             
         </section>
-    </div> 
+-->
         
 <!--footer-->
+    
         <footer>
             <h3 class="connect">Connect</h3>   
             <ul class="flex-footer">
                 <li class="email"> 
-                    <a href="mailto:michellemaile29@gmail.com">
+                    <a href="mailto:michellemaile29@gmail.com" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">
                         <img src="assets/email.png" alt="E-mail me"></a>
                 </li>
                 
                 <li class="linkedin"> 
-                    <a href="https://www.linkedin.com/in/michelle-maile/">
-                    <img src="assets/linkedin.png" alt="LinkedIn icon">
+                    <a href="https://www.linkedin.com/in/michelle-maile/" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">
+                        <img src="assets/linkedin.png" alt="LinkedIn icon" >
                     </a>
                     
                 </li>
                 <li class="github"> 
-                    <a href="https://github.com/michellemaile">
-                    <img src="assets/github.png" alt="GitHub icon">
+                    <a href="https://github.com/michellemaile" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">
+                        <img src="assets/github.png" alt="GitHub icon">
                     </a>
                 </li>
-                
             </ul>
+            
+            <div class="created-by">copyright 2018 | Designed and Developed by Michelle Maile </div>
         </footer>
+ 
         
 <!--scripts-->
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
