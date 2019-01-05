@@ -133,7 +133,7 @@ h5.implementation, .function, .persona-quote, conclusion-sections, .comp, .itera
     }
 
 p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     max-width: 800px;
     text-align: left;
     margin: 0 auto;
@@ -141,11 +141,13 @@ p {
     }
 
 .reason {
+    font-family: "assistant";
+    font-size: 3.0rem;
+    letter-spacing: 3px;
     align-content: center;
     margin: 0 auto;
     font-size: 1.6rem ;
     padding-top: 1rem;
-    color: #006494
 }
 
 @media screen and (min-width: 990px) {
@@ -250,7 +252,7 @@ h5.tagline {
 .project-brainspace {
     text-align: center;
     background-image: url("../assets/brainspace-background.png");
-    justify-items: left;
+    justify-items: center;
     overflow: hidden;
     width: 100%;
     margin: 0 auto;
@@ -299,7 +301,20 @@ h5.tagline {
 
 /*BIO*/
 
-h1.introduction {
+.my-bio-body {
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+}
+
+.bio-top {
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+    padding-right: 0;
+}
+
+.introduction  {
     font-family: "assistant";
     font-size: 3.0rem;
     letter-spacing: 3px;
@@ -312,18 +327,13 @@ h1.introduction {
         }
     }
 
-.intro-bio {
-    width: 90%;
-}
-
 .my-bio-photo { 
     width: 100%;
     height: auto;
-    align-content: center;
     }
 
 .my-bio {
-    font-size: 3rem;
+    letter-spacing: 3px;
     line-height: 150%;
     width: 80%;
     margin: 0 auto;
@@ -334,16 +344,12 @@ h1.introduction {
     padding: 1rem;
 }
 
-.my-bio-section-head {
-    align-content: left;
-}
-
-.my-bio-section {
-    margin: 3rem 0;
-}
-
-.my-bio-description {
+.my-bio-description, .intro-bio {
     width: 90%;
+}
+
+.intro-section {
+    padding-right: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -354,7 +360,8 @@ h1.introduction {
     }
     
     .intro-section {
-        padding: 3rem;
+        width: 400px;
+        padding-left: 3rem;
     }
 
     .my-bio-photo { 
@@ -363,11 +370,6 @@ h1.introduction {
         }
     }
 
- @media screen and (min-width: 990px) {
-        .bio-container {
-            width: 990px;
-        }
-    }
 
 
 
@@ -427,6 +429,7 @@ p.project-description {
 
 .brainspace-preview {
     width: 90%;
+    padding-top: 50px;
     }
 
 h1.project-title {
@@ -919,6 +922,7 @@ footer {
 }
 
 h3.connect {
+    font-family: "assistant";
     font-size: 2.5rem;
     color: #FBFBFB;
     padding-top: 3rem;
