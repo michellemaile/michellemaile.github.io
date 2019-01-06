@@ -260,6 +260,16 @@ h5.tagline {
     
   }
 
+/*
+#bs-copy {
+    display: none;
+}
+
+#bs-copy:hover .index-project-copy {
+    display: block;
+}
+*/
+
 .project-brainspace-copy {
   justify-content: center;
   padding: 4rem 3rem 2rem 3rem;
