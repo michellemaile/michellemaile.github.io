@@ -14,13 +14,15 @@ html, body {
 
 /*buttons*/
 .button {
-    border: .2rem solid #30343f; 
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-family: 'assistant';
-    color: #30343f;
-    padding: 1rem 2rem;
+    color: #fbfbfb;
+    background: #006494;
     text-align: center;
     text-decoration: none;
+    transition: all .5s ease-in-out;
+    display: inline-block;
+    padding: 1rem 2rem;
     transition: all .5s ease-in-out;
     display: inline-block;
     margin: 2rem 1rem;
@@ -29,50 +31,8 @@ html, body {
 }
 
 .button:hover {
-    background-color: #006494;
-    color: #FBFBFB;
-    text-decoration: none;
-}
-
-.index-button {
-    border: .1rem solid #30343f; 
-    font-family: 'assistant';
+    background-color: lightgrey;
     color: #30343f;
-    background: #fbfbfb;
-    font-size: 1.6rem;
-    padding: 1rem 2rem;
-    text-align: center;
-    text-decoration: none;
-    transition: all .2s ease-in-out;
-    display: inline-block;
-    margin: 2rem 1rem;
-    min-width: 160px;
-    max-width: 200px;
-}
-
-.index-button:hover {
-/*    font-size: 1.7rem;*/
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.bio-button {
-    border: .2rem solid #30343f; 
-    font-family: 'assistant';
-    color: #30343f;
-    background: #fbfbfb;
-    font-size: 1.6rem;
-    text-align: center;
-    text-decoration: none;
-    transition: all .2s ease-in-out;
-    display: inline-block;
-    margin: .5rem;
-    min-width: 160px;
-    max-width: 200px;
-}
-
-.bio-button:hover {
-    background-color: #006494;
-    color: #FBFBFB;
     text-decoration: none;
 }
 
@@ -85,13 +45,10 @@ b {
     font-weight: 900;
     }
 
-l {
-    font-weight: 300;
-    }
-
-h1.my-name, .introduction {
+h1.my-name, .introduction, .connect {
     font-family: 'oswald';
     font-size: 1.8rem;
+    font-weight: 300;
     }
 
 h1.project-title {
@@ -106,6 +63,12 @@ h2 {
 h2.ux-designer, .project-name {
     font-size: 3.0rem;
     }
+
+h2.index-project-title {
+    font-size: 3.6rem;
+     justify-content: left;
+    margin: 0 auto;
+}
 
 h3 {
     font-family: 'fjalla one';
@@ -184,7 +147,8 @@ h4.view {
     }
 
 p {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    line-height: 1.4;
     }
         
 .persona-quote {
@@ -197,8 +161,8 @@ p {
 
 
 .hero { 
-    background-image: url("../assets/hero-grey-flower.jpg");
-    height: calc(100vh - 50px);
+    background-image: url("../assets/TWZtop.jpg");
+    height: 100vh;
     width: 100%;
     background-position: center 35%;
     background-repeat: no-repeat;
@@ -207,21 +171,42 @@ p {
 
 h1.my-name {
     font-family: "assistant";
-    font-size: 3.0rem;
+    font-size: 5.0rem;
     letter-spacing: 3px;
     text-align: center;
-    padding-top: 5rem;
+    padding-top: 6rem;
+    color: #fbfbfb;
+    line-height: 1;
 }
     @media screen and (min-width: 768px) {
         h1.my-name {
-        letter-spacing: 9px;
-        padding-top: 10rem;
+            font-size: 6rem;
         }
+        
+    @media screen and (min-width: 990px) {
+        h1.my-name {
+            font-size: 8rem;
+        }
+        }    
     }
 
+#orange {
+    color: #EE701B;
+}
+
 h5.tagline {
-    padding: 2rem;
+    padding: 2rem 0;
     text-align: center;
+    color: #fbfbfb;
+    margin: 0 auto;
+    width: 355px;
+}
+
+@media screen and (min-width: 768px) {
+    h5.tagline {
+        width: 500px;
+        font-size: 2.4rem;
+    }
 }
 
 .scrolldown {
@@ -253,57 +238,36 @@ h5.tagline {
     justify-content: center;
     align-content: center;
     margin: 0 auto;
-    padding-top: 20px;
     padding-bottom: 20px;
 }
 
-/*
-.project-brainspace-logo {
-    text-align: center;
-    background-image: url("../assets/brainspace-background.png");
-    justify-items: center;
-    overflow: hidden;
-    width: 100%;
-    margin: 0 auto;
-    height: 300px;
-  }
-
-.brainspace-logo {
-   padding-top: 10rem;
-   width: 50%;
-}
-*/
 
 .project-brainspace {
-    text-align: center;
-    background-image: url("../assets/brainspace-background.png");
     justify-items: center;
     overflow: hidden;
     width: 100%;
     margin: 0 auto;
-    height: 300px;
-/*    visibility: hidden;*/
+    display: flex;
+    flex-direction: column;
 }
 
 .project-brainspace-copy {
-  justify-content: center;
+  justify-content: left;
   padding: 4rem 3rem 2rem 3rem;
+    margin: 0 auto;
 }
 
-/*
-.project-brainspace-logo:hover {
-    visibility: hidden;
+.index-brainspace-preview {
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
 }
 
-.project-brainspace-copy:hover {
-    visibility: visible;
+.img-brainspace-preview {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
 }
-
-.project-brainspace-copy {
-  justify-content: center;
-  padding: 4rem 3rem 2rem 3rem;
-}
-*/
 
 .project-outsafe {
     text-align: center;
@@ -321,22 +285,24 @@ h5.tagline {
 }
 
 
-@media screen and (min-width: 990px) {
-    .projects {
-    display: flex;
-    flex-direction: row;
-    }
+@media screen and (min-width: 768px) {
     
     .project-brainspace {
-    width: 49%;
-    padding-right: 1%;
-  }
+        display: flex;
+        flex-direction: row;
+    }
     
-    .project-outsafe {
-    width: 49%;
-    padding-left: 1%;
-  }
+    .project-brainspace-copy {
+  justify-content: left;
+  padding: 10rem 3rem 10rem 8rem;
+    width: 40%;
+    }
+    
+    .img-brainspace-preview {
+        padding-top: 10rem;
 }
+
+
     
 
 /*BIO*/
@@ -345,15 +311,26 @@ h5.tagline {
     margin: 0 auto;
     align-content: center;
     justify-content: center;
+    padding-bottom: 5rem;
 }
+
+.bio-hero {
+    background: #30343f;
+    height: 100vh;
+    
+    }
 
 .bio-top {
     margin: 0 auto;
     align-content: center;
     justify-content: center;
-    padding-right: 0;
+    padding: 6rem 0;
     width: 100%;
 }
+    
+.intro-bio {
+    color: #fbfbfb;
+    }    
 
 .introduction  {
     font-family: "assistant";
@@ -361,6 +338,7 @@ h5.tagline {
     letter-spacing: 3px;
     text-align: center;
     padding-top: 5rem;
+    color: #EE701B;
 }
     @media screen and (min-width: 768px) {
         h1.introduction {
@@ -369,7 +347,7 @@ h5.tagline {
     }
 
 .my-bio-photo { 
-    width: 100%;
+    width: 350px;
     height: auto;
     }
 
@@ -385,7 +363,7 @@ h5.tagline {
     padding: 1rem;
 }
 
-.my-bio-description, .intro-bio {
+.my-bio-description {
     width: 90%;
 }
 
@@ -710,7 +688,7 @@ h5.persona-title {
         
         .persona-1, .persona-2 {
             width: 400px;
-            height: 1050px;
+            height: 1220px;
         }
     }
   
@@ -947,7 +925,7 @@ h5.persona-title {
 footer {
     background-color: #30343f;
     width: 100%;
-    height: 20rem;
+    height: 23rem;
     text-align: center;
     margin: 0 auto;
 }
@@ -963,6 +941,8 @@ h3.connect {
     color: #FBFBFB;
     padding-top: 3rem;
     padding-bottom: 1rem;
+    font-weight: 300;
+    line-height: 1.2;
 }
 
 .flex-footer {
@@ -974,5 +954,8 @@ h3.connect {
     padding: 0 2rem;
 }
 
+#message {
+    color: #EE701B;
+}
 
 

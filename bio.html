@@ -17,15 +17,17 @@
         
     </head>
     
-    <body>
-            
-<!--nagigation-->
-   <div class="nav-bar">  
+<body>
+     
+<section class="my-bio-body">
+<div class="bio-hero">   
+    
+<div class="nav-bar">  
 <div class="nav">
   <div class="nav-header">
     <div class="nav-title">
       <a href="index.html" class="logo">
-            <img class="mm-logo" src="assets/MM-logo.png" alt="Michelle Maile Logo">
+            <img class="mm-logo" src="assets/MM-logo-white.jpg" alt="Michelle Maile Logo">
         </a>
     </div>
   </div>
@@ -39,20 +41,13 @@
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
     <a href="index.html#projects">Projects</a>
-    <a href="assets/Maile%20Resume.png" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">Resume</a>
     <a href="bio.html">About</a>
-    <a href="mailto:michellemaile29@gmail.com" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">Contact</a>
+      <a href="bio.html#connect">Contact</a>
 </div>
 </div>
-    </div>
-        
-        
-<!--body-->
-        <div class="project-container">
-        
-        <section class="my-bio-body">
-        
-        <section class="bio-top">      
+</div>
+    
+<section class="bio-top">      
             
         <div class= "my-photo">
         <img class="my-bio-photo" src="assets/full-bio-image.svg" alt="Michelle Maile Photo">
@@ -62,17 +57,16 @@
         <h1 class="introduction"> A brief introduction </h1>   
             <p class="intro-bio"> I'm a user experience designer and former experimental scientist who is excited about applying research and project management skills to a career in product design. By combining a scientific mindset with a creative sensibility, I design innovative, research-driven, user-focused solutions that are sleek, powerful and intuitive.</p> 
             
-            <a class="bio-button" href="#my-bio-text">Read full bio</a>
-            <a class="bio-button" href="assets/Maile%20Resume.png" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">Resume</a>
-            
-            
+            <a class="button" href="#my-bio">Read full bio</a>
+            <a class="button" href="assets/Maile%20Resume.png" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">Resume</a>
         </div>
-        
-        </section>
+</section>
+    
+</div>    
 
+<div class="project-container">    
             
-            
-        <section class="my-bio-text">
+    <section class="my-bio-text">
         
         <h3 class="my-bio">What do neuroscience, rock climbing, teaching, and psychology have to do with UX design?</h3>
         
@@ -112,28 +106,32 @@
             <p class="my-bio-description">UX design is cool.  It attracts people, like me, from diverse academic and working environments.  Scientists identify problems, research current approaches, and develop and test solutions that solve the problem.  Rock climbers welcome challenges with a curiosity that examines the interplay between nature and technology.  Builders understand that great products are born from good design decisions, planning and testing.  Teachers and psychologists empathize, ask questions and focus on understanding others. The best UX designers do it all. </p>
             </div>
         </section>
+    </div>  
+    </section>
+    </body>
             
-        </section>
-        <footer>
-            <h3 class="connect">Connect with me!</h3>   
+       <footer>
+           <h3 class="connect">Want to chat? Please sent me an email at <br><span id="message">michellemaile29@gmail.com</span></h3>   
             <ul class="flex-footer">
-                <a href="mailto:michellemaile29@gmail.com">
-                    <div class="email">
-                    <img src="assets/email.png" alt="E-mail me">
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/in/michelle-maile/">
-                    <div class="linkedin">
-                    <img src="assets/linkedin.png" alt="LinkedIn icon">
-                    </div>
-                </a>
-                <a href="https://github.com/michellemaile">
-                    <div class="github">
-                    <img src="assets/github.png" alt="GitHub icon">
-                    </div>
-                </a>
+                <li class="email"> 
+                    <a href="mailto:michellemaile29@gmail.com" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">
+                        <img src="assets/email.png" alt="E-mail me"></a>
+                </li>
+                
+                <li class="linkedin"> 
+                    <a href="https://www.linkedin.com/in/michelle-maile/" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">
+                        <img src="assets/linkedin.png" alt="LinkedIn icon" >
+                    </a>
+                    
+                </li>
+                <li class="github"> 
+                    <a href="https://github.com/michellemaile" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">
+                        <img src="assets/github.png" alt="GitHub icon">
+                    </a>
+                </li>
             </ul>
-            <p class="created-by">copyright 2018 | Designed and Developed by Michelle Maile </p>
+            
+            <p class="created-by">&copy; 2018 | Designed and Developed by Michelle Maile </p>
         </footer>
 
 
@@ -152,8 +150,5 @@
 
   gtag('config', 'UA-130580782-1');
 </script>
-        </section>
-        
-        
-    </body>
+
 </html>
