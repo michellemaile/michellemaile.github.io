@@ -8,7 +8,7 @@ html, body {
     color: #333333;
     font-family: 'Assistant', sans-serif;
     font-weight: 400;
-    margin: 0;
+/*    margin: 0 auto;*/
 }
 
 
@@ -400,35 +400,12 @@ h5.tagline {
     }
 
 .bio-top {
-    padding: 6rem 0;
+    margin: 0 auto;
+    padding-top: 6rem;
     display: flex;
     flex-direction: column;
+/*    width: 100%;*/
 }
-
-.intro-section {
-    margin: 0 auto;
-    align-content: center;
-    }
-
-.introduction  {
-    font-family: "assistant";
-    font-size: 3.0rem;
-    letter-spacing: 3px;
-    padding-top: 5rem;
-    color: #EE701B;
-    margin: 0 auto;
-}
-    @media screen and (min-width: 768px) {
-        .introduction {
-        letter-spacing: 6px;
-        }
-    }
-
-.intro-bio {
-    color: #fbfbfb;
-    width: 90%;
-    }    
-
 
 .my-photo {
     margin: 0 auto;
@@ -439,11 +416,42 @@ h5.tagline {
     height: auto;
     }
 
+.intro-section {
+    margin: 0 auto;
+    }
+
+.introduction  {
+    font-family: "assistant";
+    font-size: 3.0rem;
+    letter-spacing: 3px;
+/*    padding-top: 5rem;*/
+    color: #EE701B;
+    margin: 0 auto;
+}
+    @media screen and (min-width: 768px) {
+        .introduction {
+            letter-spacing: 6px;
+        }
+    }
+
+p.intro-bio {
+    color: #fbfbfb;
+    font-weight: 300;
+    max-width: 500px;
+    margin: 0 auto;
+    }    
+
+/*
 @media screen and (min-width: 768px) {
     .bio-top {
         display: flex;
         flex-direction: row;
 }
+}
+*/
+
+.bio-buttons {
+/*    padding: 1rem;*/
 }
 
 .my-bio {
@@ -455,9 +463,7 @@ h5.tagline {
     padding-bottom: 2rem;
     }
 
-.bio-button {
-    padding: 1rem;
-}
+
 
 .my-bio-description {
     width: 90%;
