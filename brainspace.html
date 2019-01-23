@@ -13,20 +13,18 @@
         <!--FONTS-->
         <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/css?family=Assistant:400,700" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Fjalla One' rel='stylesheet'>
         
     </head>
     
     <body>
 <!--navigation-->
-      <div class="nav-bar">  
+<div class="nav-bar">  
 <div class="nav">
   <div class="nav-header">
     <div class="nav-title">
       <a href="index.html" class="logo">
-            <img class="mm-logo" src="assets/MM-logo.png" alt="Michelle Maile Logo">
+            <img class="mm-logo" src="assets/MM-logo-white.svg" alt="Michelle Maile Logo">
         </a>
-<!--        <h2 class="logo-name"> Michelle Maile | Product Designer</h2>    -->
     </div>
   </div>
   <div class="nav-btn">
@@ -38,9 +36,9 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
-    <a href="index.html#projects">Projects</a>
-    <a href="bio.html">About</a>
-    <a href="brainspace.html#connect">Contact</a>
+    <a href="index.html#projects" id="dark">Projects</a>
+    <a href="bio.html" id="dark">About</a>
+    <a href="brainspace.html#connect" id="dark">Contact</a>
 </div>
 </div>
     </div>
@@ -560,10 +558,15 @@
         </div>
         
         </div>
-        
-<!--footer-->
-      <footer>
-           <h3 class="connect">Want to chat? Please sent me an email at <br><span id="message">michellemaile29@gmail.com</span></h3>   
+  <!--footer-->
+    
+    
+        <footer>
+            
+            <img class="foot-logo" src="assets/Footer-logo.png" alt="personal logo">
+            
+            <h3 class="connect">LET'S CONNECT!</h3>
+            <h4 class="send-me">Please send me an email at<br><span id="message">michellemaile29@gmail.com</span></h4>   
             <ul class="flex-footer">
                 <li class="email"> 
                     <a href="mailto:michellemaile29@gmail.com" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">
@@ -583,8 +586,10 @@
                 </li>
             </ul>
             
-            <p class="created-by">&copy; 2018 | Designed and Developed by Michelle Maile </p>
-        </footer>
+            <h4 class="created-by">&copy; 2018 | Designed and Developed by Michelle Maile </h4>
+            
+        </footer>      
+
 
     <!--scripts-->
 <!--        nav burger-->

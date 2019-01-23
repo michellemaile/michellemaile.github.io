@@ -5,7 +5,7 @@
 html, body {
     font-size: 10px;
     line-height: 250%;
-    color: #30343f;
+    color: #333333;
     font-family: 'Assistant', sans-serif;
     font-weight: 400;
     margin: 0;
@@ -32,10 +32,13 @@ html, body {
 
 .button:hover {
     background-color: lightgrey;
-    color: #30343f;
+    color: #333333;
     text-decoration: none;
 }
 
+#dark {
+    color: #333333;
+}
 
 
 /*FONT FAMILIES*/
@@ -71,7 +74,6 @@ h2.index-project-title {
 }
 
 h3 {
-    font-family: 'fjalla one';
     font-size: 3rem;
     }
 
@@ -156,6 +158,83 @@ p {
     }   
 }
 
+/*footer*/
+
+footer {
+    position: relative;
+    background-color: #333333;
+    width: 100%;
+}
+
+.foot-logo {
+    position: absolute;
+    right: 2rem;
+    width: 35%;
+    min-width: 200px;
+    top: -30px;
+    
+}
+
+h3.connect, h4.send-me, .flex-footer, .created-by {
+    font-family: "assistant";
+    color: #FBFBFB;
+    padding-left: 2rem;
+    font-size: 1.8rem;
+    max-width: 250px;
+}
+
+h3.connect {
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    padding-top: 5rem;
+}
+
+.send-me {
+    padding: 2rem 0;
+}
+
+.created-by {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+    
+    h3.connect {
+        font-size: 2.5rem;
+    }
+    
+    h3.connect, h4.send-me, .flex-footer, .created-by {
+        max-width: 500px;
+        padding-left: 5rem;
+    }
+    
+    .foot-logo {
+        top: -40px;
+        width: 25%;
+    } 
+}
+
+@media screen and (min-width: 990px) {
+    .foot-logo {
+        top: -50px;
+    }
+}
+
+.flex-footer {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.linkedin {
+    padding: 0 2rem;
+}
+
+#message {
+    color: #EE701B;
+    }
+
 
 /*INDEX hero*/
 
@@ -174,7 +253,7 @@ h1.my-name {
     font-size: 5.0rem;
     letter-spacing: 3px;
     text-align: center;
-    padding-top: 6rem;
+    padding-top: 10rem;
     color: #fbfbfb;
     line-height: 1;
 }
@@ -182,13 +261,13 @@ h1.my-name {
         h1.my-name {
             font-size: 6rem;
         }
+    }
         
     @media screen and (min-width: 990px) {
         h1.my-name {
             font-size: 8rem;
         }
-        }    
-    }
+    }    
 
 #orange {
     color: #EE701B;
@@ -200,6 +279,7 @@ h5.tagline {
     color: #fbfbfb;
     margin: 0 auto;
     width: 355px;
+    line-height: 1.2;
 }
 
 @media screen and (min-width: 768px) {
@@ -217,7 +297,7 @@ h5.tagline {
 
 .email-link {
     text-decoration: none;
-    color: #30343f;
+    color: #333333;
 }
 
 .scroll {
@@ -238,7 +318,7 @@ h5.tagline {
     justify-content: center;
     align-content: center;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 
@@ -267,6 +347,8 @@ h5.tagline {
     width: 90%;
     margin: 0 auto;
     padding-bottom: 2rem;
+     align-content: center;
+    justify-content: center;
 }
 
 .project-outsafe {
@@ -284,6 +366,11 @@ h5.tagline {
   padding: 4rem 3rem 2rem 3rem;
 }
 
+.view-study {
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
 
 @media screen and (min-width: 768px) {
     
@@ -294,69 +381,78 @@ h5.tagline {
     
     .project-brainspace-copy {
   justify-content: left;
-  padding: 10rem 3rem 10rem 8rem;
+  padding:  10rem 5rem 0rem 5rem ;
     width: 40%;
+    }
+    
+    .index-project-copy {
+        width: 230px;
     }
     
     .img-brainspace-preview {
         padding-top: 10rem;
 }
-
-
-    
-
-/*BIO*/
-
-.my-bio-body {
-    margin: 0 auto;
-    align-content: center;
-    justify-content: center;
-    padding-bottom: 5rem;
 }
 
+/*BIO*/
 .bio-hero {
-    background: #30343f;
-    height: 100vh;
-    
+    background: #333333;
     }
 
 .bio-top {
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-section {
     margin: 0 auto;
     align-content: center;
-    justify-content: center;
-    padding: 6rem 0;
-    width: 100%;
-}
-    
-.intro-bio {
-    color: #fbfbfb;
-    }    
+    }
 
 .introduction  {
     font-family: "assistant";
     font-size: 3.0rem;
     letter-spacing: 3px;
-    text-align: center;
     padding-top: 5rem;
     color: #EE701B;
+    margin: 0 auto;
 }
     @media screen and (min-width: 768px) {
-        h1.introduction {
+        .introduction {
         letter-spacing: 6px;
         }
     }
+
+.intro-bio {
+    color: #fbfbfb;
+    width: 90%;
+    }    
+
+
+.my-photo {
+    margin: 0 auto;
+}
 
 .my-bio-photo { 
     width: 350px;
     height: auto;
     }
 
+@media screen and (min-width: 768px) {
+    .bio-top {
+        display: flex;
+        flex-direction: row;
+}
+}
+
 .my-bio {
     letter-spacing: 3px;
     line-height: 150%;
     width: 80%;
     margin: 0 auto;
-    padding: 2rem;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
     }
 
 .bio-button {
@@ -367,25 +463,13 @@ h5.tagline {
     width: 90%;
 }
 
-.intro-section {
-    padding-right: 0;
-}
+.my-bio-section {
+        padding-top: 2rem;
+    }
 
 @media screen and (min-width: 768px) {
-    
-    .bio-top {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .intro-section {
-        width: 400px;
-        padding-left: 3rem;
-    }
-
     .my-bio-photo { 
         width: 400px;
-        align-content: left;
         }
     }
 
@@ -419,9 +503,8 @@ p.project-description {
     text-align: center;
 }
 
-
 .case-study-section {
-  background: #F6F8F8;
+  background: #F1F3F2;
   margin: 2.4rem auto;
   padding: 0 3.6rem 2.6rem 3.6rem;
 }
@@ -498,7 +581,6 @@ hr.role {
 .overview {
     display: flex;
     flex-direction: column;
-    
 }
 
     @media screen and (min-width: 575px) {    
@@ -556,7 +638,6 @@ hr.role {
     width: 21.5rem;
     margin: 1rem;
     justify-content: center;
-    border: .1rem solid black ;
 }
 
     @media screen and (min-width: 990px) {
@@ -599,6 +680,7 @@ hr.role {
     width: 90%;
     display: flex;
     flex-direction: row;
+      padding-top: 5rem;
       }
   
   .txt-dash-analysis {
@@ -913,7 +995,7 @@ h5.persona-title {
 .scroll-top {
     text-decoration: none;
     font-size: 14px;
-    color: #30343F;
+    color: #333333;
 }
 
 .arrow {
@@ -921,41 +1003,6 @@ h5.persona-title {
 }
 
 
-/*footer*/
-footer {
-    background-color: #30343f;
-    width: 100%;
-    height: 23rem;
-    text-align: center;
-    margin: 0 auto;
-}
 
-.created-by {
-    text-align: center;
-    color: #fbfbfb;
-}
-
-h3.connect {
-    font-family: "assistant";
-    font-size: 2.5rem;
-    color: #FBFBFB;
-    padding-top: 3rem;
-    padding-bottom: 1rem;
-    font-weight: 300;
-    line-height: 1.2;
-}
-
-.flex-footer {
-    display: inline-flex;
-    flex-direction: row;
-}
-
-.email, .linkedin, .github {
-    padding: 0 2rem;
-}
-
-#message {
-    color: #EE701B;
-}
 
 
