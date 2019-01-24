@@ -83,8 +83,14 @@ h3.my-bio {
 }
 
 h3.roles-titles {
-    font-size: 1.8rem;
+    padding-bottom: 10px;
     }
+
+.role {
+    background-color: #EE701B;
+    height: 3px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 h4 {
     font-family: 'oswald';
@@ -400,7 +406,7 @@ h5.tagline {
 
 .bio-top {
     margin: 0 auto;
-    padding: 6rem 0;
+    padding: 3rem 0;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -431,12 +437,18 @@ h5.tagline {
     @media screen and (min-width: 768px) {
         .introduction {
             letter-spacing: 6px;
+            padding-left: 25px;
         }
+        
+        .bio-top {
+            padding-top: 6rem;
     }
+}
 
 p.intro-bio {
     color: #fbfbfb;
     font-weight: 300;
+    width: 90%;
     max-width: 500px;
     margin: 0 auto;
     }    
@@ -449,14 +461,20 @@ p.intro-bio {
         margin: 0 auto;
     }
     
+    .intro-bio {
+        width: 100%;
+    }
+    
     .introduction {
         text-align: left;
+        width: 100%;
     }
 }
 
 .bio-buttons {
     margin: 0 auto;
     align-content: center;
+    padding-left: 15px;
 }
 
 
@@ -911,6 +929,7 @@ h5.persona-title {
 
 .img-land-wire, .img-dash-wire {
     width: 330px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -936,8 +955,13 @@ h5.persona-title {
     width: 330px;
     }
 
+.img-land-final {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .land1, .land2, .land3, .land4 {
     margin: .5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     
     
@@ -972,6 +996,10 @@ h5.persona-title {
 
 .img-dash-info, .iteration {
     padding: 2rem;
+}
+
+.img-dash-iterations, .img-dash-final {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .img-dash-iterations, .img-dash-final, .img-dash-info {
