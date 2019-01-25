@@ -59,6 +59,10 @@ h2.logo-name {
     padding: 13px 10px 13px 10px;
 }
 
+#project-page .nav > .nav-links > a:hover {
+    color: #EE701B;
+}
+
 .nav > #nav-check {
   display: none;
 }
@@ -78,16 +82,16 @@ h2.logo-name {
     color: #fbfbfb;  
   }
     
-#project-page .nav > .nav-btn > label {
-    color: #333333;  
-  }  
+    #project-page .nav > .nav-btn > label {
+        color: #333333;  
+    }  
     
-#project-page .nav > .nav-btn > label:hover {
-    color: #fbfbfb;  
-  }    
+    #project-page .nav > .nav-btn > label:hover {
+        color: #fbfbfb;  
+    }    
     
   .nav > .nav-btn > label:hover {
-    background-color: #333333;
+      background-color: #333333;
   }
     
   .nav > .nav-btn > label > span {
@@ -114,6 +118,15 @@ h2.logo-name {
     width: 100%;
     color: #fbfbfb;  
   }
+    
+  #project-page .nav > .nav-links > a {
+      color: #fbfbfb;
+    }
+    
+   #project-page .nav > .nav-links > a:hover {
+      color: #EE701B;
+    } 
+    
   .nav > #nav-check:not(:checked) + .nav-links {
     height: 0px;
   }
