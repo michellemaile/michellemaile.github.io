@@ -75,12 +75,26 @@ h2.logo-name {
   .nav > .nav-btn > label:hover {
     background-color: #333333;
   }
+    
   .nav > .nav-btn > label > span {
     display: block;
     width: 25px;
     height: 10px;
     border-top: 2px solid #fbfbfb;
   }
+    
+    label:hover #grey.nav-check {
+        background-color: red;
+    }
+    
+    #black {
+    border-top: 2px solid #333333;    
+    }
+    
+    #black:hover {
+        border-top: 2px solid #fbfbfb; 
+    }
+    
   .nav > .nav-links {
     position: absolute;
     display: block;
