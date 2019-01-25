@@ -50,6 +50,10 @@ h2.logo-name {
   color: #fbfbfb;
 }
 
+#project-page .nav > .nav-links > a {
+    color: #333333;
+}
+
 .nav > .nav-links > a:hover {
     color: #EE701B;
     padding: 13px 10px 13px 10px;
@@ -71,7 +75,17 @@ h2.logo-name {
     width: 50px;
     height: 50px;
     padding: 13px;
+    color: #fbfbfb;  
   }
+    
+#project-page .nav > .nav-btn > label {
+    color: #333333;  
+  }  
+    
+#project-page .nav > .nav-btn > label:hover {
+    color: #fbfbfb;  
+  }    
+    
   .nav > .nav-btn > label:hover {
     background-color: #333333;
   }
@@ -80,20 +94,8 @@ h2.logo-name {
     display: block;
     width: 25px;
     height: 10px;
-    border-top: 2px solid #fbfbfb;
+    border-top: 2px solid;
   }
-    
-    label:hover #grey.nav-check {
-        background-color: red;
-    }
-    
-    #black {
-    border-top: 2px solid #333333;    
-    }
-    
-    #black:hover {
-        border-top: 2px solid #fbfbfb; 
-    }
     
   .nav > .nav-links {
     position: absolute;
@@ -106,10 +108,11 @@ h2.logo-name {
     top: 50px;
       text-align: center;
   }
+    
   .nav > .nav-links > a {
     display: block;
     width: 100%;
-
+    color: #fbfbfb;  
   }
   .nav > #nav-check:not(:checked) + .nav-links {
     height: 0px;
@@ -119,6 +122,7 @@ h2.logo-name {
        margin: 0 auto;
       align-content: center;
       justify-content: center;
+      color: #fbfbfb;
   }
 }
 

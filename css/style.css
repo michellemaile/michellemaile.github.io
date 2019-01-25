@@ -9,6 +9,7 @@ html, body {
     font-family: 'Assistant', sans-serif;
     font-weight: 400;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 
@@ -35,11 +36,6 @@ html, body {
     color: #333333;
     text-decoration: none;
 }
-
-#dark {
-    color: #333333;
-}
-
 
 /*FONT FAMILIES*/
 
