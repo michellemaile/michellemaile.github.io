@@ -83,7 +83,10 @@ h3.my-bio {
 }
 
 h3.roles-titles {
+    padding: 0;
     padding-bottom: 10px;
+    text-align: center;
+    
     }
 
 .role {
@@ -97,17 +100,12 @@ h4 {
     font-size: 1.8rem;
     }
 
-h4.persona-name {
-    font-size: 2.4rem;
+h3.persona-name {
     padding-bottom: 2rem;
     }
 
 h5.tagline, .index-project-description, .use-feature {
     font-size: 1.8rem;
-    }
-
-h5.implementation, .function, .persona-quote, conclusion-sections, .comp, .iteration {
-    font-size: 1.4rem;
     }
 
 p {
@@ -118,6 +116,16 @@ p {
     padding: 3rem 0;
     }
 
+li {
+    font-size: 1.9rem;
+    max-width: 800px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+
+
 .reason {
     font-family: "assistant";
     font-size: 3.0rem;
@@ -126,6 +134,7 @@ p {
     margin: 0 auto;
     font-size: 1.6rem ;
     padding-top: 1rem;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 990px) {
@@ -138,9 +147,7 @@ h4 {
     font-size: 2.4rem;
     }
     
-h4.solution {
-    font-size: 1.8rem; 
-    }
+
     
 h4.view {
     font-size: 2rem; 
@@ -170,6 +177,11 @@ footer {
     position: relative;
     background-color: #333333;
     width: 100%;
+    margin-top: 6rem;
+}
+
+.footer {
+    
 }
 
 .foot-logo {
@@ -177,6 +189,7 @@ footer {
     right: 2rem;
     width: 35%;
     min-width: 200px;
+    max-width: 300px;
     top: -30px;
 }
 
@@ -232,6 +245,10 @@ h3.connect {
     flex-direction: row;
 }
 
+.email-logo, .linkedin-logo, .github-logo {
+    width: 25px;
+}
+
 .linkedin {
     padding: 0 2rem;
 }
@@ -248,9 +265,19 @@ h3.connect {
     background-image: url("../assets/TWZtop.jpg");
     height: 100vh;
     width: 100%;
-    background-position: center 35%;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.hero-wrapper {
+    height: calc (100vh-50px);
+    display: flex;
+    width: 100%;
+}
+
+.hero-copy {
+    margin: 0 auto;
 }
 
 h1.my-name {
@@ -342,6 +369,10 @@ h5.tagline {
     margin: 0 auto;
 }
 
+.index-project-copy {
+    margin-left: 0;
+}
+
 .index-brainspace-preview {
     margin: 0 auto;
     align-content: center;
@@ -350,6 +381,7 @@ h5.tagline {
 
 .img-brainspace-preview {
     width: 90%;
+    max-width: 700px;
     margin: 0 auto;
     padding-bottom: 2rem;
      align-content: center;
@@ -371,17 +403,16 @@ h5.tagline {
   padding: 4rem 3rem 2rem 3rem;
 }
 
-.view-study {
-    margin: 0 auto;
-    padding-bottom: 3rem;
+#view-case-study {
+    margin: 0;
 }
-
 
 @media screen and (min-width: 768px) {
     
     .project-brainspace {
         display: flex;
         flex-direction: row;
+        width: 90%;
     }
     
     .project-brainspace-copy {
@@ -407,9 +438,13 @@ h5.tagline {
 .bio-top {
     margin: 0 auto;
     padding: 3rem 0;
-    display: flex;
-    flex-direction: column;
     width: 100%;
+    max-width: 960px;
+    grid-template-columns: 1fr 1rf;
+    grid-gap: 30px;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 6rem;
 }
 
 .my-photo {
@@ -479,7 +514,7 @@ p.intro-bio {
 
 
 .my-bio {
-    letter-spacing: 3px;
+    max-width: 700px;
     line-height: 150%;
     width: 80%;
     margin: 0 auto;
@@ -555,6 +590,10 @@ p.project-description {
 
 /*PROJECT: project-hero*/
 
+.project-hero {
+    padding-bottom: 6rem;
+}
+
 .brainspace-preview {
     width: 90%;
     padding-top: 50px;
@@ -603,6 +642,10 @@ hr.role {
     }
 
 /*PROJECT: problem and solution*/
+
+#left {
+    text-align: left;
+}
 
 .overview {
     display: flex;
@@ -661,9 +704,10 @@ hr.role {
 }
 
 .img-SWOT-logos {
+    position: relative;
     width: 21.5rem;
-    margin: 1rem;
-    justify-content: center;
+    left: 0px;
+    justify-content: left;
 }
 
     @media screen and (min-width: 990px) {
@@ -676,7 +720,7 @@ hr.role {
         .dropbox, .google, .sugarsync {
             width: 30%;
             padding: 2rem;
-            align-items: center;
+/*            align-items: center;*/
         }
     }
 
@@ -689,6 +733,10 @@ hr.role {
 
 .txt-dash-analysis {
     text-align: left;
+}
+
+.img-dash-analysis {
+    padding-top: 1rem;
 }
 
 .img-SWOT-dash {
@@ -758,27 +806,32 @@ hr.role {
 
 .img-persona {
     width: 150px;
+    padding-top: 2rem;
 }
 
-h5.persona-title {
+.persona-title {
     text-align: left;
-    font-size: 1.4rem;
-    padding: 1rem 0;
+    padding: 0;
+    padding-top: 2rem;
 }
 
 .persona-descriptions {
     padding: 0;
+    font-size: 1.8rem;
+    line-height: 1.4;
 }
 
 .persona-quote {
     padding: 4rem 0;
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 
     @media screen and (min-width: 575px) {
         .persona-1, .persona-2 {
             width: 400px;
-            height: 900px;
+            height: 1110px;
         }
     }
 
@@ -796,7 +849,7 @@ h5.persona-title {
         
         .persona-1, .persona-2 {
             width: 400px;
-            height: 1220px;
+            height: 1120px;
         }
     }
   
@@ -813,9 +866,12 @@ h5.persona-title {
 .img-icon {
     width: 7rem;
 }
-
 .solution {
-    margin-top: 2rem;
+    margin: 2rem 0;
+}
+
+.implementation, .function {
+    padding: 0;
 }
 
 .findings-boxes {
@@ -825,10 +881,8 @@ h5.persona-title {
 
 .findings-descriptions {
     padding: 0;
-}
-
-.implementation, .function {
-    padding: 1rem;
+    padding-bottom: 2rem;
+    
 }
 
 .box {
@@ -910,11 +964,6 @@ h5.persona-title {
 .takeaways {
     margin: 0 auto;
     padding: 1rem 0;
-}
-
-.wireframe-case-study-section {
-  margin: 2.4rem auto;
-  padding: 0 3.6rem 2.6rem 3.6rem;
 }
 
 .wireframes {

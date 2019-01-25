@@ -49,7 +49,7 @@
         
 <!--hero-->
         <section class="project-hero">
-            <img class="brainspace-preview" src="assets/brainspace/brainspace-preview-3.png" alt="BrainSpace screen preview">
+            <img class="brainspace-preview" src="assets/brainspace/brainspace-preview.png" alt="BrainSpace screen preview">
             <h1 class="project-title">BrainSpace</h1>
                 <p class="project-description">This was my first large scale project at Bloc. BrainSpace is a Saas cloud storage app that presents a new way to organize and sort files and tasks.</p>
                 <a class="button" href="https://invis.io/5YPCS803G2F" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">View Prototype</a>
@@ -102,7 +102,7 @@
         
         <section class="case-study-section">
                 
-                <section class="the-problem">
+                <section class="the-problem" id="left">
                     <h3 class="section-titles">The Problem</h3>
                     <p class="descriptions">Humans are being <b>inundated by a massive amount of information </b> that they want to organize and store for future use. Even though cloud storage is not a new concept and multiple big name players have already accessed the market, <b>users are frustrated by the lack of organizational freedom and want to be able to locate their files in a way that feels more intuitive. </b></p>
                 </section>
@@ -111,7 +111,7 @@
             
             <section class="case-study-section">
                 
-                <section class="the-solution">
+                <section class="the-solution" id="left">
                 <h3 class="section-titles">The Solution</h3>
                     <p class="descriptions">Through comprehensive market analysis, user research, and user testing, I created BrainSpace. BrainSpace aims to solve the problem of digital disorganization by offering <b>multiple layers of organization, customizable sort options, </b> and <b>lists</b> that elevate this cloud storage service to an organizer, prioritizer, and collaboration tool that can handle anything.</p>
                 </section>
@@ -166,16 +166,19 @@
                     <p class="descriptions center">I conducted a competitive analysis of three cloud/online storage platforms: two, Google Drive and Dropbox, are leaders in the field, while SugarSync is less-known.</p>
             
             <div class="SWOT-analysis">
-                <div class="dropbox">
-                    <img class="img-SWOT-logos" src="assets/brainspace/dropbox-logo.png" alt="Dropbox Logo"> 
-                    <p class="descriptions"> Dropbox is another well-known leader that prides itself on collaboration and access from any device. Similar to Google however, the dashboard leaves much to be desired in terms of organizing and finding files.</p>
-                </div>
-                <div class="google">   
-                    <img class="img-SWOT-logos"src="assets/brainspace/google-logo.png" alt="Google Drive Logo">
+              
+                <div class="google" style="text-align: left" width="100">   
+                    <img class="img-SWOT-logos"src="assets/brainspace/google-logo.svg" alt="Google Drive Logo">
                     <p class="descriptions">Google is a well-known leader in the cloud storage space and excels in the simplicity of use. The dashboard however, can be difficult to manage with its limited file sorting options, minimal collaboration features, and satellite apps that don’t consistently integrate.
                 </div>
-                <div class="sugarsync">
-                    <img class="img-SWOT-logos"src="assets/brainspace/sugarsync-logo.png" alt="SugarSync Logo">
+                
+                  <div class="dropbox" style="text-align: left" width="100">
+                    <img class="img-SWOT-logos" src="assets/brainspace/dropbox-logo.svg" alt="Dropbox Logo"> 
+                    <p class="descriptions"> Dropbox is another well-known leader that prides itself on collaboration and access from any device. Similar to Google however, the dashboard leaves much to be desired in terms of organizing and finding files.</p>
+                </div>
+                
+                <div class="sugarsync" style="text-align: left" width="100">
+                    <img class="img-SWOT-logos"src="assets/brainspace/sugarsync-logo.svg" alt="SugarSync Logo">
                     <p class="descriptions">SugarSync holds its strength in file storage that is organized in the same way as your desktop. Unfortunately, it is expensive compared to other apps and it suffers with the editing, collaboration, and creation features.</p>
                 </div>
             </div>
@@ -210,12 +213,15 @@
 
                 <div class="txt-dash-analysis">
 
-                    <p class="descriptions">In addition to the insights gained from the competitive analysis outlined above, there were some interesting things to be learned by examining the dashboards of the three sites. <br><br>
-                    1) <b>Layout:</b> First, there are some obvious trending dashboard layouts. All three sites examined featured a side panel with top bar. <br><br>
-                    2) <b>List view:</b> All three also had a listview which is consistent with what I found during the user research in that users prefer a listview to an icon view. Interestingly, Google Drive incorporates both views by adding icons/previews of 4 “quick access files” above the list view. <br><br>
-                    3) <b>Search bar:</b> All three had a prominent search bar. <br><br>
-                    4) <b>Logo: </b>All three had their logo in the top left corner, taking up minimal space.<br><br>
-                    5) <b>File organization: </b> All three provide a small preset amount of information about each file such as owner, last modified, last opened, or size. The most organizational influence the user has over this is to reverse the order on the owner or the name of the file.</p>
+                    <p class="descriptions" id="no-padding">In addition to the insights gained from the competitive analysis outlined above, there were some interesting things to be learned by examining the dashboards of the three sites.</p>
+                    <ol type="1">    
+                        <li><b>Layout:</b> First, there are some obvious trending dashboard layouts. All three sites examined featured a side panel with top bar. </li>
+                        <li><b>List view:</b> All three also had a listview which is consistent with what I found during the user research in that users prefer a listview to an icon view. Interestingly, Google Drive incorporates both views by adding icons/previews of 4 “quick access files” above the list view. </li>
+                        <li><b>Search bar:</b> All three had a prominent search bar. </li>
+                        <li><b>Logo: </b>All three had their logo in the top left corner, taking up minimal space.</li>
+                       <li><b>File organization: </b> All three provide a small preset amount of information about each file such as owner, last modified, last opened, or size. The most organizational influence the user has over this is to reverse the order on the owner or the name of the file.</li>
+                    </ol>
+                    
                 </div> 
             </div>
             
@@ -235,15 +241,15 @@
             <div class="persona-profiles">
                 <div class="persona-box">
                 <div class="persona-1">
-                <h4 class="persona-name">Regina</h4>
+                <h3 class="persona-name">Regina</h3>
                     <hr>
-                    <p class="persona-info">Management Consultant and Mother <br> Age: 47 / Location: Austin, TX / Use: weekly</p>
-                <img class="img-persona" src="assets/brainspace/regina.png" alt="Regina's photo">
-                <h5 class="persona-title"><b>Bio</b></h5>
+                    <img class="img-persona" src="assets/brainspace/regina.png" alt="Regina's photo">
+                    <p class="persona-info">Management Consultant and Mother <br> Age: <b>47</b> <br> Location: <b>Austin, TX</b> <br> Use: <b>weekly</b></p>
+                <p class="persona-title"><b>Bio</b></p>
                     <p class="persona-descriptions">Regina leads a busy life as a management consultant, a mother, an avid woodworker, and an aspiring business owner. She uses different services in order to keep her work files, her inspirations and her family matters separate.  She doesn’t like switching between platforms and would rather keep everything in one place but has gotten frustrated by limited organizational features.</p>
-                <h5 class="persona-title"><b>Goals</b></h5>
+                <p class="persona-title"><b>Goals</b></p>
                     <p class="persona-descriptions">Easily upload, organize and store content. <br> Free storage with automatic backups. <br> Separation between work and personal content.</p>
-                <h5 class="persona-title"><b>Frustrations</b></h5>
+                <p class="persona-title"><b>Frustrations</b></p>
                     <p class="persona-descriptions">Doesn’t like having stuff in so many places. <br> Difficulty sharing, organizing and creating content. 
                     <h5 class="persona-quote">“<b>I have tons of things to keep track of between work, the kids and my personal interests and it’s spread all over the place. I’d like to organize it all in one spot.</b>”</h5>
                 </div>
@@ -251,17 +257,18 @@
                   
                 <div class="persona-box">
                 <div class="persona-2">
-                <h4 class="persona-name">Kent</h4>
+                <h3 class="persona-name">Kent</h3>
                     <hr>
-                    <p class="persona-info">Biologist, Student, Surfer <br> Age: 29 / Location: Portland, OR / Use: daily</p>
-                <img class="img-persona" src="assets/brainspace/kent.png" alt="Kent's photo">
-                    <h5 class="persona-title"><b>Bio</b></h5>
+                    <img class="img-persona" src="assets/brainspace/kent.png" alt="Kent's photo">
+                    <p class="persona-info">Biologist, Student, Surfer <br> Age: <b>29</b><br> Location: <b>Portland, OR </b><br> Use: <b>daily</b></p>
+            
+                    <p class="persona-title"><b>Bio</b></p>
                     <p class="persona-descriptions">Kent has been comfortable doing lab work for many years and is now going back to school to learn some new skills. He’s nervous, yet excited and is trying to keep all his documents organized. He needs separate spaces for his work and school documents as well as a way to organize them as he sees fit. He feels the current solutions are too ridged in terms of organizational features.</p>
-                <h5 class="persona-title"><b>Goals</b></h5>
+                <p class="persona-title"><b>Goals</b></p>
                     <p class="persona-descriptions">Organize content without limitations. <br> Collaborate on files through video/audio/text. Set reminders and to-do lists for specific content.</p>
-                <h5 class="persona-title"><b>Frustrations</b></h5>
+                <p class="persona-title"><b>Frustrations</b></p>
                     <p class="persona-descriptions">Difficulty of organization. <br> Apps don’t sync effectively nor efficiently between devices. 
-                    <h5 class="persona-quote">“<b>I am always moving between work, home and coffee shops and need to be able to see, edit and organize my content immediately.</b>”</h5>
+                    <p class="persona-quote">“<b>I am always moving between work, home and coffee shops and need to be able to see, edit and organize my content immediately.</b>”</p>
                 </div>
                 </div>
                 
@@ -283,10 +290,10 @@
                 <div class="layers">
                 <img class="img-icon" src="assets/brainspace/layers.png" alt="Layers of organization">
                 <div class="box">
-                <h4 class="solution">Multiple layers of organization</h4><hr>
-                    <h5 class="implementation"><b>Implementation</b></h5>
+                <h4 class="solution">Multiple layers of organization</h4><hr><br>
+                    <p class="implementation"><b>Implementation</b></p>
                         <p class="findings-descriptions">Completely separate spaces for different activities.</p>
-                    <h5 class="function"><b>Function/Value</b></h5>
+                    <p class="function"><b>Function/Value</b></p>
                         <p class="findings-descriptions">Users can focus on one project while files related to others are out of the way.</p>
                     </div>
             </div>
@@ -294,10 +301,10 @@
                 <div class="sort">
                 <img class="img-icon" src="assets/brainspace/sort.png" alt="Customizable sort options">
                     <div class="box">
-                <h4 class="solution">Customizable sort options</h4><hr>
-                    <h5 class="implementation"><b>Implementation</b></h5>
+                <h4 class="solution">Customizable<br>sort options</h4><hr><br>
+                    <p class="implementation"><b>Implementation</b></p>
                         <p class="findings-descriptions">Users can sort files by two qualifiers of their choosing.</p>
-                    <h5 class="function"><b>Function/Value</b></h5>
+                    <p class="function"><b>Function/Value</b></p>
                        <p class="findings-descriptions">Allows users to organize and view content in a way that makes sense to them.</p>
             </div>
                 </div>
@@ -305,10 +312,10 @@
                 <div class="notifications">
                 <img class="img-icon" src="assets/brainspace/notification.png" alt="Notifications and To-Dos">
                     <div class="box">
-                <h4 class="solution">Notification view and to-do list</h4><hr>
-                   <h5 class="implementation"><b>Implementation</b></h5>
+                <h4 class="solution">Notification view<br>and to-do list</h4><hr><br>
+                   <p class="implementation"><b>Implementation</b></p>
                         <p class="findings-descriptions">Master list that updates with space-relevant information.</p>
-                    <h5 class="function"><b>Function/Value</b></h5>
+                    <p class="function"><b>Function/Value</b></p>
                         <p class="findings-descriptions">Serves as an organizer and encourages users to store everything in one place.</p>
                     </div>
                 </div>
@@ -364,6 +371,8 @@
             <p class="descriptions">As part of my work for developing this application, I was tasked with generating a name and designing a logo. The goal was to create something that felt sleek, intelligent, powerful and professional. Eventually, I settled on BrainSpace because this app is for all of the things occupying the spaces of your brain. The app keeps everything organized but separate and hopefully promotes a feeling of peace that everything is all in one place without being overwhelming. </p>
             </div>
             <img class="img-logos" src="assets/brainspace/logos.png" alt="First logo iterations">
+            <p class="descriptions">Final logo design</p>
+             <img class="img-logos" src="assets/brainspace/final-logo.png" alt="First logo iterations">
         </section>
         
         <div class="type-color">
@@ -500,7 +509,7 @@
                     <p class="descriptions">The final dashboard design has a simplified side panel and provides much <b>cleaner views of the spaces.</b> Users can see <b>useful, higher-level information</b> about each space including tags, when it was created and by who. There is a <b>simplified custom view,</b> allowing users to view the top three files filtered however they choose including recently modified, recently opened, created by, tagged with and starred. The notifications and to-do list are easily accessed and update based on which space (if any) is being viewed.</p>
                     </div>
                     
-                    <img class="img-dash-final" src="assets/brainspace/dash-1-final.svg" alt="Final design for dashboard">
+                    <img class="img-dash-final" src="assets/brainspace/dash-1-final.png" alt="Final design for dashboard">
                         
                     <img class="img-dash-info"
                          src="assets/brainspace/img-dash-info-1.svg" alt="feature information">
@@ -520,7 +529,7 @@
                     <p class="descriptions">The updated design is cleaner-looking, easier to use and provides more information. The decision to present the files in a list format and the decision include “star” and “share” as the two action items available in a hover state, were based on user surveys and testing. In order to address the organization complaints of cloud storage users, I decided to incorporate <b>two sorting buttons that allow users to view files based on different qualifiers.</b> A user can decide for example, that they want to view all files that were created by a specific person that have a certain tag associated with them. Once this selection has been made, the files will reorder according to these specifications. </p>
                     </div>
                     
-                    <img class="img-dash-final" src="assets/brainspace/dash-2-final.svg" alt="Final design for file view">
+                    <img class="img-dash-final" src="assets/brainspace/dash-2-final.png" alt="Final design for file view">
                     
                     <img class="img-dash-info"
                          src="assets/brainspace/img-dash-info-2.svg" alt="feature information">
@@ -571,23 +580,23 @@
             <ul class="flex-footer">
                 <li class="email"> 
                     <a href="mailto:michellemaile29@gmail.com" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">
-                        <img src="assets/email.png" alt="E-mail me"></a>
+                        <img class="email-logo" src="assets/email.svg" alt="E-mail me"></a>
                 </li>
                 
                 <li class="linkedin"> 
                     <a href="https://www.linkedin.com/in/michelle-maile/" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">
-                        <img src="assets/linkedin.png" alt="LinkedIn icon" >
+                        <img class="linkedin-logo" src="assets/linkedin.svg" alt="LinkedIn icon" >
                     </a>
                     
                 </li>
                 <li class="github"> 
                     <a href="https://github.com/michellemaile" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">
-                        <img src="assets/github.png" alt="GitHub icon">
+                        <img class="github-logo" src="assets/github.svg" alt="GitHub icon">
                     </a>
                 </li>
             </ul>
             
-            <h4 class="created-by">&copy; 2018 | Designed and Developed by Michelle Maile </h4>
+            <h4 class="created-by">&copy; 2018 &bull; Designed and Developed by Michelle Maile </h4>
             </section>
         </footer>      
 
