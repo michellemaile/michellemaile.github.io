@@ -246,7 +246,7 @@ h3.connect {
 }
 
 .linkedin {
-    padding: 0 2rem;
+    padding: 1rem 2rem;
 }
 
 #message {
@@ -267,7 +267,7 @@ h3.connect {
 }
 
 .hero-wrapper {
-    height: calc (100vh-50px);
+    height: calc(100vh - 50px);
     display: flex;
     width: 100%;
 }
@@ -429,6 +429,8 @@ h5.tagline {
 /*BIO*/
 .bio-hero {
     background: #333333;
+    display: grid;
+    margin: auto;
     }
 
 .bio-top {
