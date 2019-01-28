@@ -9,7 +9,7 @@ html, body {
     font-family: 'Assistant', sans-serif;
     font-weight: 400;
     margin: 0 auto;
-    cursor: pointer;
+/*    cursor: pointer;*/
 }
 
 
@@ -320,7 +320,19 @@ h5.tagline {
 .scrolldown {
     text-align: center;
     position: relative;
-    bottom: 0;
+    bottom: 350px;
+}
+
+@media screen and (min-width: 768px) {
+    .scrolldown {
+        bottom: 300px;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .scrolldown {
+        bottom: 250px;
+    }
 }
 
 .email-link {
@@ -447,10 +459,12 @@ h5.tagline {
 
 .my-photo {
     margin: 0 auto;
+    text-align: center;
 }
 
 .my-bio-photo { 
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: auto;
     }
 
@@ -506,8 +520,8 @@ p.intro-bio {
 
 .bio-buttons {
     margin: 0 auto;
-    align-content: center;
-    padding-left: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -789,6 +803,7 @@ hr.role {
     text-align: center;
     padding: 3rem;
     background: white;
+    max-width: 100%;
     width: 335px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -976,6 +991,7 @@ hr.role {
 
 .img-land-wire, .img-dash-wire {
     width: 330px;
+    max-width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -1000,6 +1016,7 @@ hr.role {
 
 .img-land-iterations, .img-land-final {
     width: 330px;
+    max-width: 100%;
     }
 
 .img-land-final {
@@ -1051,6 +1068,7 @@ hr.role {
 
 .img-dash-iterations, .img-dash-final, .img-dash-info {
     width: 330px;
+    max-width: 100%;
     }
     
     @media screen and (min-width: 990px) {
