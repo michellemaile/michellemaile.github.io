@@ -320,9 +320,10 @@ h5.tagline {
 .scrolldown {
     text-align: center;
     position: relative;
-    bottom: 350px;
+/*    padding-top: 50px;*/
 }
 
+/*
 @media screen and (min-width: 768px) {
     .scrolldown {
         bottom: 300px;
@@ -334,6 +335,7 @@ h5.tagline {
         bottom: 250px;
     }
 }
+*/
 
 .email-link {
     text-decoration: none;
