@@ -258,7 +258,7 @@ h3.connect {
 
 
 .hero { 
-    background-image: url("../assets/TWZtop.jpg");
+    background-image: url("../assets/5.jpg");
     height: 100vh;
     width: 100%;
     background-position: center;
@@ -272,8 +272,10 @@ h3.connect {
     width: 100%;
 }
 
+@media screen and (max-width: 767px) {
 .hero-copy {
     margin: 0 auto;
+}
 }
 
 h1.my-name {
@@ -282,12 +284,16 @@ h1.my-name {
     letter-spacing: 3px;
     text-align: center;
     padding-top: 10rem;
-    color: #fbfbfb;
+    color: #30343f;
     line-height: 1;
 }
     @media screen and (min-width: 768px) {
         h1.my-name {
             font-size: 6rem;
+            text-align: left;
+            margin-left: 20%;
+            padding-top: 5rem;
+            width: 600px;
         }
     }
         
@@ -304,7 +310,7 @@ h1.my-name {
 h5.tagline {
     padding: 2rem 0;
     text-align: center;
-    color: #fbfbfb;
+    color: #30343f;
     margin: 0 auto;
     width: 355px;
     line-height: 1.2;
@@ -314,6 +320,8 @@ h5.tagline {
     h5.tagline {
         width: 500px;
         font-size: 2.4rem;
+        text-align: left;
+            margin-left: 20%;
     }
 }
 

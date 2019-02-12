@@ -50,7 +50,7 @@ h2.logo-name {
   color: #fbfbfb;
 }
 
-#project-page .nav > .nav-links > a {
+#project-page, #index .nav > .nav-links > a {
     color: #333333;
 }
 
@@ -59,7 +59,7 @@ h2.logo-name {
     padding: 13px 10px 13px 10px;
 }
 
-#project-page .nav > .nav-links > a:hover {
+#project-page, #index .nav > .nav-links > a:hover {
     color: #EE701B;
 }
 
@@ -82,11 +82,11 @@ h2.logo-name {
     color: #fbfbfb;  
   }
     
-    #project-page .nav > .nav-btn > label {
+    #project-page, #index .nav > .nav-btn > label {
         color: #333333;  
     }  
     
-    #project-page .nav > .nav-btn > label:hover {
+    #project-page, #index .nav > .nav-btn > label:hover {
         color: #fbfbfb;  
     }    
     
@@ -119,11 +119,11 @@ h2.logo-name {
     color: #fbfbfb;  
   }
     
-  #project-page .nav > .nav-links > a {
+  #project-page, #index .nav > .nav-links > a {
       color: #fbfbfb;
     }
     
-   #project-page .nav > .nav-links > a:hover {
+   #project-page, #index .nav > .nav-links > a:hover {
       color: #EE701B;
     } 
     
