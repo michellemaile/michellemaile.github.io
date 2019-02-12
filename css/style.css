@@ -289,12 +289,6 @@ h1.my-name {
         h1.my-name {
             font-size: 6rem;
             padding-top: 5rem;
-            
-/*
-            text-align: left;
-            margin-left: 20%;
-            width: 600px;
-*/
         }
     }
         
@@ -321,20 +315,17 @@ h5.tagline {
     h5.tagline {
         width: 500px;
         font-size: 2.4rem;
-/*
-        text-align: left;
-            margin-left: 20%;
-
     }
 }
 
+/*
 .scrolldown {
     text-align: center;
     position: relative;
     bottom: 100px;
 }
 
-/*
+
 @media screen and (min-width: 768px) {
     .scrolldown {
         bottom: 300px;
@@ -347,6 +338,7 @@ h5.tagline {
     }
 }
 */
+
 
 .email-link {
     text-decoration: none;
