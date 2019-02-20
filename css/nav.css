@@ -10,6 +10,11 @@ h2.logo-name {
     vertical-align: middle;
 }
 
+.mm-logo, .logo-name {
+    display: inline-block;
+    margin: auto;
+}
+
 .nav {
   height: 50px;
   width: 80%;
@@ -28,11 +33,6 @@ h2.logo-name {
   padding: 0 10px;
 }
 
-.mm-logo, .logo-name {
-    display: inline-block;
-    margin: auto;
-}
-
 .nav > .nav-btn {
   display: none;
 }
@@ -47,25 +47,35 @@ h2.logo-name {
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
-  color: #fbfbfb;
 }
 
 #project-page, #index .nav > .nav-links > a {
-    color: #333333;
+    color: #30343f;
 }
 
-.nav > .nav-links > a:hover {
-    color: #EE701B;
-    padding: 13px 10px 13px 10px;
+#bio .nav > .nav-links > a {
+    color: #fbfbfb;
 }
 
-#project-page, #index .nav > .nav-links > a:hover {
+#index .nav > .nav-links > a:hover {
     color: #EE701B;
 }
+
+#bio .nav > .nav-links > a:hover {
+    color: #EE701B;
+}
+
+#project-page .nav > .nav-links > a:hover {
+    color: #EE701B;
+}
+
 
 .nav > #nav-check {
   display: none;
 }
+
+
+
 
 @media (max-width:575px) {
   .nav > .nav-btn {
@@ -79,27 +89,31 @@ h2.logo-name {
     width: 50px;
     height: 50px;
     padding: 13px;
-    color: #fbfbfb;  
+
   }
     
-    #project-page, #index .nav > .nav-btn > label {
-        color: #333333;  
-    }  
-    
-    #project-page, #index .nav > .nav-btn > label:hover {
-        color: #fbfbfb;  
-    }    
+/*    ham background*/
     
   .nav > .nav-btn > label:hover {
       background-color: #333333;
   }
     
-  .nav > .nav-btn > label > span {
+ #index .nav > .nav-btn > .nav-check > label:hover {
+      background-color: #fbfbfb;
+  }    
+    
+.nav > .nav-btn > label > span {
     display: block;
     width: 25px;
     height: 10px;
     border-top: 2px solid;
+      color: #30343f;
   }
+    
+#bio .nav > .nav-btn > label > span {
+      color: #fbfbfb;
+  }    
+    
     
   .nav > .nav-links {
     position: absolute;
@@ -116,14 +130,21 @@ h2.logo-name {
   .nav > .nav-links > a {
     display: block;
     width: 100%;
-    color: #fbfbfb;  
   }
     
-  #project-page, #index .nav > .nav-links > a {
+#index .nav > .nav-links > a {
       color: #fbfbfb;
     }
     
-   #project-page, #index .nav > .nav-links > a:hover {
+#bio .nav > .nav-links > a {
+      color: #fbfbfb;
+    }  
+    
+#project-page .nav > .nav-links > a {
+      color: #fbfbfb;
+    }    
+    
+   .nav > .nav-links > a:hover {
       color: #EE701B;
     } 
     
@@ -137,6 +158,7 @@ h2.logo-name {
       justify-content: center;
       color: #fbfbfb;
   }
+    
 }
 
 
