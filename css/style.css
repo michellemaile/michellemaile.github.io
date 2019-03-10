@@ -584,9 +584,12 @@ p.project-description {
 }
 
 .case-study-section {
-  background: #F1F3F2;
   margin: 2.4rem auto;
   padding: 0 3.6rem 2.6rem 3.6rem;
+}
+
+.grey {
+    background: #F1F3F2; 
 }
 
 .image-section {
@@ -624,6 +627,11 @@ h1.project-title {
 
 
 /*PROJECT: my roles*/
+
+.roles {
+    padding-top: 20px;
+    }
+}
 
 .roles ul {
     display: flex;
@@ -858,6 +866,24 @@ hr.role {
 .larger {
     font-size: 1.8rem;
     padding: 0px;
+}
+
+.SWOT-screen {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+@media screen and (min-width: 990px) {
+.SWOT-screen {
+    display: flex;
+    flex-direction: row;
+}
+}
+
+.img-SWOT-screens {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /*PROJECT: dash analysis*/
