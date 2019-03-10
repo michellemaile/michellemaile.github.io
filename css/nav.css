@@ -49,7 +49,11 @@ h2.logo-name {
   text-decoration: none;
 }
 
-#project-page, #index .nav > .nav-links > a {
+#index .nav > .nav-links > a {
+    color: #30343f;
+}
+
+#project-page .nav > .nav-links > a {
     color: #30343f;
 }
 

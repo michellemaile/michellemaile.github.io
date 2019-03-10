@@ -29,6 +29,8 @@ html, body {
     margin: 2rem 1rem;
     min-width: 160px;
     max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .button:hover {
@@ -78,19 +80,6 @@ h3.my-bio {
     font-size: 3rem;
 }
 
-h3.roles-titles {
-    padding: 0;
-    padding-bottom: 10px;
-    text-align: center;
-    
-    }
-
-.role {
-    background-color: #EE701B;
-    height: 3px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 h4 {
     font-family: 'oswald';
     font-size: 1.8rem;
@@ -120,8 +109,6 @@ li {
     padding: 1rem 0;
 }
 
-
-
 .reason {
     font-family: "assistant";
     font-size: 3.0rem;
@@ -131,6 +118,7 @@ li {
     font-size: 1.6rem ;
     padding-top: 1rem;
     text-transform: uppercase;
+    color: #fbfbfb;
 }
 
 @media screen and (min-width: 990px) {
@@ -142,8 +130,6 @@ h1.project-title {
 h4 {
     font-size: 2.4rem;
     }
-    
-
     
 h4.view {
     font-size: 2rem; 
@@ -298,6 +284,7 @@ h1.my-name {
 #orange {
     color: #EE701B;
 }
+
 
 h5.tagline {
     padding: 2rem 0;
@@ -558,6 +545,7 @@ p.intro-bio {
     text-align: center;
 }
 
+/*
     @media screen and (min-width: 575px) {
         .project-container {
             width: 575px;
@@ -569,13 +557,30 @@ p.intro-bio {
             width: 960px;
         }
     }
+*/
 
 h3.section-titles {
-    padding-top: 5rem;
+color: #fbfbfb;
+}
+
+h3.roles-titles {
+    padding: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    color: #30343f;
+    }
+
+.section {
+    background: #006494;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 p.project-description {
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .case-study-section {
@@ -657,9 +662,11 @@ hr.role {
 
 /*PROJECT: problem and solution*/
 
+/*
 #left {
     text-align: left;
 }
+*/
 
 .overview {
     display: flex;
@@ -676,6 +683,20 @@ hr.role {
 
 /*PROJECT: user research*/
 
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.line-graphs {
+    display: flex;
+    flex-direction: column;
+    vertical-align: baseline;
+    justify-content: center;
+}
+
 .chart-1 {grid-area: chart-1;}
 
 .chart-2 {grid-area: chart-2;}
@@ -685,6 +706,16 @@ hr.role {
 .chart-4 {grid-area: chart-4;}
 
 .pie-charts {
+    max-width: 800px;
+    display: grid;
+    align-items: flex-start;
+    grid-template-areas:
+        "chart-1 chart-2"
+        "chart-3 chart-4"
+}
+
+.outsmart-pie-charts {
+    max-width: 800px;
     display: grid;
     align-items: flex-start;
     grid-template-areas:
@@ -693,7 +724,7 @@ hr.role {
 }
     
 .img-pie-charts {
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
@@ -701,13 +732,90 @@ hr.role {
         .pie-charts {    
             display: flex;
             flex-direction: row;
+            width: 80%;
+            margin: 0 auto;
         }
     
         .img-pie-charts {
             width: 100%;
             padding: 1rem;
         }
+        
+        .line-graphs {
+            display: flex;
+            flex-direction: row;
+        }
+        
     }
+
+ @media screen and (min-width: 768px) {
+        .outsmart-pie-charts {    
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            margin: 0 auto;
+        }
+}
+     
+     #mvp {
+         margin: 0 auto;
+         align-content: center;
+         justify-content: center;
+     }  
+
+/*PROJECT: quotes*/
+
+.green-quote-box {
+    background: #39998e;
+    padding: 1rem;
+    box-shadow: 10px 10px #DA674A;
+    margin: 10px;
+}
+
+.red-quote-box {
+    background: #DA674A;
+    padding: 1rem;
+    box-shadow: 10px 10px #39998e;
+    margin: 10px;
+}
+
+.quotes {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quote-1, .quote-2, .quote-3, .quote-4 {
+    padding: 20px;
+}
+
+.quote-align {
+    text-align: center;
+}
+
+.quote-1 {grid-area: quote-1;}
+
+.quote-2 {grid-area: quote-2;}
+
+.quote-3 {grid-area: quote-3;}
+
+.quote-4 {grid-area: quote-4;}
+
+
+ @media screen and (min-width: 768px) {
+.quotes {
+    max-width: 800px;
+    display: grid;
+    align-items: flex-start;
+    grid-template-areas:
+        "quote-1 quote-4"
+        "quote-2 quote-3"
+}
+}
+
+.no-below {
+    padding-bottom: 0px;
+}
+
 
 
 /*PROJECT: competitive analysis*/
@@ -715,13 +823,23 @@ hr.role {
 .SWOT-analysis {
     display: flex;
     flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.analysis {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .img-SWOT-logos {
     position: relative;
     width: 21.5rem;
     left: 0px;
-    justify-content: left;
+    justify-content: center;
+    margin: 0 auto;
 }
 
     @media screen and (min-width: 990px) {
@@ -734,15 +852,20 @@ hr.role {
         .dropbox, .google, .sugarsync {
             width: 30%;
             padding: 2rem;
-/*            align-items: center;*/
         }
     }
+
+.larger {
+    font-size: 1.8rem;
+    padding: 0px;
+}
 
 /*PROJECT: dash analysis*/
 
 .content-dash-analysis {
     display: flex;
     flex-direction: column;
+    max-width: 1000px;
 }
 
 .txt-dash-analysis {
@@ -761,6 +884,7 @@ hr.role {
 .comp {
     padding: .5rem 2rem;
     text-align: left;
+    font-size: 1.8rem;
 }
 
 @media screen and (min-width: 990px) {
@@ -892,6 +1016,8 @@ hr.role {
 .findings-boxes {
   display: flex;
   flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .findings-descriptions {
@@ -940,14 +1066,37 @@ hr.role {
 
 /*PROJECT: branding and identity*/
 
-.img-logos {
-    width: 100%;
+.no-space {
+    padding-bottom: 0px;
 }
 
+.img-logos {
+    width: 80%;
+}
 
+#final-logo {
+    margin: 0 auto;
+}
 .img-type, .img-color {
     padding-top: 2rem;
     width: 100%;
+}
+
+.type {
+    margin: 0 auto;
+    justify-content: center
+}
+
+.typeface {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.triangles {
+    max-width: 800px;
 }
 
 
@@ -955,8 +1104,22 @@ hr.role {
     .type-color {
         width: 575px;
     }
+
+    .typeface {
+        width: 575px;
+    }
+    
 }
 
+
+@media screen and (min-width: 768px) {
+
+.typeface {
+        display: flex;
+        flex-direction: row;
+        max-width: 80%;
+    }
+}
 
 @media screen and (min-width: 990px) {
     .type-color {
@@ -965,10 +1128,11 @@ hr.role {
         width: 100%;
     }
     
+    .typeface {
+        max-width: 800px;
+    }
+    
 }
-
-
-
 
 /*PROJECT: wireframes*/
 
@@ -1062,6 +1226,7 @@ hr.role {
 
 .img-dash-info, .iteration {
     padding: 2rem;
+    font-size: 1.8rem;
 }
 
 .img-dash-iterations, .img-dash-final {
@@ -1083,12 +1248,104 @@ hr.role {
         }
     }
 
-   
+/*PROJECT: optimize*/
+
+
+.optimize {
+    max-width: 300px;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+.title {
+    font-size: 3rem;
+    padding-bottom: 0px;
+}
+
+.max-width {
+    max-width: 1000px;
+}
+
+.screen-iterations {
+    display: flex;
+    flex-direction: column;
+}
+
+ @media screen and (min-width: 768px) {
+     .screen-iterations {
+    display: flex;
+    flex-direction: row;
+         justify-content: center;
+}
+}
+
+
+/*PROJECT: final screens*/
+
+.screens-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    align-content: center;
+}
+
+@media screen and (min-width: 990px) {
+    .screens-3 {
+    display: flex;
+    flex-direction: row;
+}
+}
+
+.screen-1 {grid-area: screen-1;}
+.screen-2 {grid-area: screen-2;}
+.screen-3 {grid-area: screen-3;}
+.screen-4 {grid-area: screen-4;}
+.screen-5 {grid-area: screen-5;}
+.screen-6 {grid-area: screen-6;}
+
+.final-screens {
+    max-width: 1200px;
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+        "screen-1"
+        "screen-2"
+        "screen-3"
+        "screen-4"
+        "screen-5"
+        "screen-6"    
+}
+
+        @media screen and (min-width: 768px) {
+            .final-screens {   
+                display: grid;
+                grid-template-areas:
+                "screen-1 screen-2"
+                "screen-3 screen-4"
+                "screen-5 screen-6"
+                }
+        }
+
+  @media screen and (min-width: 990px) {
+            .final-screens {   
+                display: grid;
+                margin: 0 auto;
+                grid-template-areas:
+                "screen-1 screen-2 screen-3" "screen-4 screen-5 screen-6"
+                }
+        }
 
 /*conclusions*/
 
-.conclusions-txt {
-    padding-top: 5rem;
+.conclusion-sections {
+    padding-top: 40px;
+}
+
+.no-space {
+    padding: 5px;
 }
 
 .scrollup {
@@ -1104,6 +1361,8 @@ hr.role {
 .arrow {
     width: 25px;
 }
+
+
 
 
 
