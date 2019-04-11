@@ -376,6 +376,12 @@ h5.tagline {
     justify-content: center;
 }
 
+.outsmart-preview {
+    padding-bottom: 20px;
+    font-family: 'proza libre'
+   
+}
+
 .img-brainspace-preview {
     width: 90%;
     max-width: 700px;
