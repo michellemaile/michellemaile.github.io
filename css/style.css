@@ -135,8 +135,15 @@ h4.view {
     font-size: 2rem; 
     }    
        
-.use-feature, conclusion-sections {
+    .use-feature {
     font-size: 2rem;
+    font-family: "assistant";
+    }
+    
+.conclusion-sections {
+    font-size: 2rem;
+    font-family: "assistant";
+    font-weight: 700;
     }
 
 .initial-design, .comp {
@@ -870,7 +877,7 @@ hr.role {
     }
 
 .larger {
-    font-size: 1.8rem;
+    font-size: 3rem;
     padding: 0px;
 }
 
